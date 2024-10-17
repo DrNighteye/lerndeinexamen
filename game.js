@@ -96,6 +96,7 @@ incrementScore = num => {
     score += num;
     scoreText.innerText = score;
 };
+
 // Eventlistener für "Zur Kategorie"
 document.getElementById("categoryButton").addEventListener("click", () => {
     window.location.href = "category.html";
