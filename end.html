@@ -1,0 +1,23 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super gemacht!</title>
+    <link rel="stylesheet" href="AppStyle.css">
+</head>
+<body>
+<div class="container">
+    <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore"></h1>
+        <form id="scoreForm" onsubmit="saveHighScore(event)">
+            <input type="text" name="username" id="username" placeholder="Username" required="">
+            <button type="submit" class="btn" id="saveScoreBtn" disabled="">
+                Save
+            </button>
+        </form>
+        <!-- Überprüfe hier den Pfad -->
+        <a class="btn" href="GAME.html">Play Again</a> <!-- Entferne den führenden Slash, wenn nötig -->
+        <a class="btn" href="index.html">Home</a>
+    </div>
+</div>
+<script src="end.js"></script>
+</body></html>

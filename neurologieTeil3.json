@@ -1,0 +1,475 @@
+[
+  {
+    "question": "Was ist die häufigste Ursache einer Subarachnoidalblutung (SAB)?",
+    "choice1": "Trauma durch Sturz",
+    "choice2": "Aneurysmaruptur an der Hirnbasis",
+    "choice3": "Infektion der Hirnhäute",
+    "choice4": "Gerinnungsstörungen",
+    "answer": 2,
+    "category": "Neurologie Teil 3"
+  },
+  {
+    "question": "Welches ist der Hauptrisikofaktor für die Entstehung eines Aneurysmas?",
+    "choice1": "Diabetes mellitus",
+    "choice2": "Art. Hypertonie",
+    "choice3": "Chronische Niereninsuffizienz",
+    "choice4": "Übermäßiger Alkoholkonsum",
+    "answer": 2,
+    "category": "Neurologie Teil 3"
+  },
+  {
+    "question": "Welche typischen Symptome können bei einer Subarachnoidalblutung auftreten?",
+    "choice1": "Schwindel und Sehverlust",
+    "choice2": "Vernichtungskopfschmerz, Übelkeit, Krampfanfälle",
+    "choice3": "Hautausschlag und Fieber",
+    "choice4": "Gelenkschmerzen und Verwirrtheit",
+    "answer": 2,
+    "category": "Neurologie Teil 3"
+  },
+  {
+    "question": "Welche diagnostischen Methoden sind bei der Subarachnoidalblutung am wichtigsten?",
+    "choice1": "Röntgenaufnahme des Schädels",
+    "choice2": "cCT, MRT, Lumbalpunktion, Angiografie",
+    "choice3": "Ultraschall des Gehirns",
+    "choice4": "Blutuntersuchung",
+    "answer": 2,
+    "category": "Neurologie Teil 3"
+  },
+  {
+    "question": "Welche Therapieoptionen stehen zur Verfügung, um ein Aneurysma zu behandeln?",
+    "choice1": "Coiling und mikrochirurgisches Clipping",
+    "choice2": "Antibiotische Therapie",
+    "choice3": "Blutverdünnung",
+    "choice4": "Diuretische Therapie",
+    "answer": 1,
+    "category": "Neurologie Teil 3"
+  },
+  {
+    "question": "Welche Komplikation tritt häufig bei einer Subarachnoidalblutung innerhalb der ersten 14 Tage auf?",
+    "choice1": "Herzinfarkt",
+    "choice2": "Gefäßkrampf mit ischämischem Infarkt",
+    "choice3": "Lungenentzündung",
+    "choice4": "Magengeschwür",
+    "answer": 2,
+    "category": "Neurologie Teil 3"
+  },
+  {
+    "question": "Welche Maßnahmen werden bei erhöhtem Hirndruck ergriffen?",
+    "choice1": "Senkung des systolischen Blutdrucks, Hyperventilation, Mannitol",
+    "choice2": "Erhöhte Flüssigkeitszufuhr und Blutverdünnung",
+    "choice3": "Ruhigstellung und Kühlung",
+    "choice4": "Keine Maßnahmen erforderlich",
+    "answer": 1,
+    "category": "Neurologie Teil 3"
+  },
+  {
+    "question": "Was ist typisch für ein epidurales Hämatom?",
+    "choice1": "Arterielle Blutung zwischen Schädelknochen und Dura mater",
+    "choice2": "Blutung im Gehirnventrikelsystem",
+    "choice3": "Hämatom im Subarachnoidalraum",
+    "choice4": "Blutung im Rückenmark",
+    "answer": 1,
+    "category": "Neurologie Teil 3"
+  },
+  {
+    "question": "Welche Symptome sind typisch für ein epidurales Hämatom?",
+    "choice1": "3-phasiger Verlauf mit Bewusstlosigkeit, Erholung und sekundärer Eintrübung",
+    "choice2": "Langsame Zunahme der Kopfschmerzen und Sehstörungen",
+    "choice3": "Schmerzen in den Gelenken und Fieber",
+    "choice4": "Hautausschlag und Bauchschmerzen",
+    "answer": 1,
+    "category": "Neurologie Teil 3"
+  },
+  {
+    "question": "Wie wird ein epidurales Hämatom häufig diagnostiziert?",
+    "choice1": "Durch klinische Untersuchung",
+    "choice2": "Mittels cCT oder MRT",
+    "choice3": "Mit Ultraschall",
+    "choice4": "Durch Blutuntersuchung",
+    "answer": 2,
+    "category": "Neurologie Teil 3"
+  },
+  {
+    "question": "Was ist eine mögliche Therapie bei einem epiduralen Hämatom?",
+    "choice1": "Schädeltrepanation mit Hämatomausräumung",
+    "choice2": "Medikamentöse Therapie ohne Eingriff",
+    "choice3": "Therapie mit Antibiotika",
+    "choice4": "Blutdrucksenkung ohne weitere Maßnahmen",
+    "answer": 1,
+    "category": "Neurologie Teil 3"
+  },
+    {
+      "question": "Was ist die häufigste Ursache eines subduralen Hämatoms?",
+      "choice1": "Einriss der Brückenvenen",
+      "choice2": "Verletzung der A. meningea",
+      "choice3": "Hypertonie",
+      "choice4": "Infektion der Hirnhäute",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Risikofaktoren begünstigen die Entstehung eines subduralen Hämatoms?",
+      "choice1": "Alter, Alkoholabusus, Antikoagulation",
+      "choice2": "Diabetes und Übergewicht",
+      "choice3": "Vitamin-D-Mangel",
+      "choice4": "Asthma und Allergien",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Symptome treten bei einem akuten subduralen Hämatom auf?",
+      "choice1": "Freies Intervall und Kopfschmerzen",
+      "choice2": "Kein freies Intervall, Kopfschmerzen, Mydriasis",
+      "choice3": "Hohes Fieber und Verwirrtheit",
+      "choice4": "Schmerzen in den Gelenken",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Diagnosemethode ist am besten geeignet, um ein subdurales Hämatom zu erkennen?",
+      "choice1": "Ultraschall",
+      "choice2": "Blutuntersuchung",
+      "choice3": "CCT/MRT",
+      "choice4": "Röntgenaufnahme",
+      "answer": 3,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Wie wird ein chronisches subdurales Hämatom häufig therapiert?",
+      "choice1": "MRT-Überwachung",
+      "choice2": "Bohrlochtrepanation",
+      "choice3": "Physiotherapie",
+      "choice4": "Medikamentöse Behandlung",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Symptome treten bei einem Schädel-Hirn-Trauma auf?",
+      "choice1": "Kopfschmerzen, Übelkeit und Verwirrung",
+      "choice2": "Hautausschlag und Fieber",
+      "choice3": "Atemnot und Brustschmerzen",
+      "choice4": "Krampfanfälle und Gelbsucht",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Wie wird die Schwere eines Schädel-Hirn-Traumas bestimmt?",
+      "choice1": "Durch MRT-Aufnahmen",
+      "choice2": "Mit der Glasgow Coma Scale (GCS)",
+      "choice3": "Anhand des Körpergewichts",
+      "choice4": "Durch Blutdruckmessung",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Punktezahl auf der GCS spricht für ein schweres Schädel-Hirn-Trauma?",
+      "choice1": "15 bis 13 Punkte",
+      "choice2": "12 bis 9 Punkte",
+      "choice3": "3 bis 8 Punkte",
+      "choice4": "20 bis 18 Punkte",
+      "answer": 3,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Symptome weisen auf ein schweres Schädel-Hirn-Trauma hin?",
+      "choice1": "Kopfschmerzen und Sehstörungen",
+      "choice2": "Anhaltendes Koma und Pupillenerweiterung",
+      "choice3": "Leichtes Fieber und Hautausschlag",
+      "choice4": "Schwellung der Gelenke",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Therapie wird bei einem schweren Schädel-Hirn-Trauma häufig angewendet?",
+      "choice1": "Dekompessive Kraniektomie",
+      "choice2": "Antibiotische Behandlung",
+      "choice3": "Ernährungsumstellung",
+      "choice4": "Kryotherapie",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist eine häufige Komplikation nach einem schweren Schädel-Hirn-Trauma?",
+      "choice1": "Lungenentzündung",
+      "choice2": "Epilepsie und Hemiparese",
+      "choice3": "Herzinfarkt",
+      "choice4": "Nierenversagen",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist typisch für eine Dekortikationshaltung?",
+      "choice1": "Beugehaltung der Arme und Streckung der Beine",
+      "choice2": "Streckhaltung der Arme und Beine",
+      "choice3": "Lockerung aller Muskeln",
+      "choice4": "Krampfartige Bewegungen",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Begleitverletzung ist typisch für eine Schädelbasisfraktur?",
+      "choice1": "Rhinoliquorrhoe oder Monokelhämatom",
+      "choice2": "Epileptische Anfälle",
+      "choice3": "Lähmungen der Beine",
+      "choice4": "Sehverlust",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist ein anderes Wort für das apallische Syndrom?",
+      "choice1": "Schlafapnoe",
+      "choice2": "Vegetatives Koma",
+      "choice3": "Wachkoma",
+      "choice4": "Epileptischer Zustand",
+      "answer": 3,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Funktion bleibt bei einem Patienten mit apallischem Syndrom erhalten?",
+      "choice1": "Zielgerichtete Muskelbewegungen",
+      "choice2": "Blasen- und Mastdarmkontrolle",
+      "choice3": "Schlaf-Wach-Rhythmus",
+      "choice4": "Kognitive Fähigkeiten",
+      "answer": 3,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Wie lange dauert es, bis man von einem 'permanent vegetative state' spricht?",
+      "choice1": "Nach 3 Monaten",
+      "choice2": "Nach 6 Monaten",
+      "choice3": "Nach 12 Monaten",
+      "choice4": "Nach 24 Monaten",
+      "answer": 3,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was versteht man unter Hirntod?",
+      "choice1": "Irreversiblen Ausfall der Großhirnfunktion",
+      "choice2": "Irreversiblen Ausfall des Kleinhirns",
+      "choice3": "Irreversiblen Ausfall des gesamten Gehirns",
+      "choice4": "Kurzfristigen Ausfall des Bewusstseins",
+      "answer": 3,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist eine häufige Ursache für Hirntod?",
+      "choice1": "Schädel-Hirn-Trauma",
+      "choice2": "Schlafstörungen",
+      "choice3": "Erhöhter Blutdruck",
+      "choice4": "Kariesinfektion",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Wie wird Spannungskopfschmerz charakterisiert?",
+      "choice1": "Einseitig pulsierender Schmerz",
+      "choice2": "Dumpf-drückender Schmerz beidseitig",
+      "choice3": "Stechender Schmerz im Schläfenbereich",
+      "choice4": "Migräneartiger Schmerz",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Begleiterscheinung ist typisch für Migräne, aber nicht für Spannungskopfschmerzen?",
+      "choice1": "Übelkeit und Erbrechen",
+      "choice2": "Täglicher Schmerz",
+      "choice3": "Steifheit im Nacken",
+      "choice4": "Schmerzlinderung durch Bewegung",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist ein typisches Auslösemerkmal von Cluster-Kopfschmerzen?",
+      "choice1": "Starker Schmerz nach Alkoholkonsum",
+      "choice2": "Migräne im gesamten Kopfbereich",
+      "choice3": "Langsame Schmerzentwicklung",
+      "choice4": "Schmerzen nur bei Bewegung",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Wie lange kann ein Cluster-Kopfschmerz anhalten?",
+      "choice1": "5 Minuten",
+      "choice2": "30 Minuten bis 3 Stunden",
+      "choice3": "Mehrere Tage",
+      "choice4": "Bis zu einer Woche",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Erscheinung tritt häufig bei Cluster-Kopfschmerzen auf?",
+      "choice1": "Nasenlaufen und Augenrötung",
+      "choice2": "Erbrechen und Nackensteifheit",
+      "choice3": "Schweißausbrüche",
+      "choice4": "Ohrenschmerzen",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist das Hauptsymptom der Trigeminusneuralgie?",
+      "choice1": "Lang anhaltender Schmerz in den Beinen",
+      "choice2": "Attackenartiger Schmerz im Gesicht",
+      "choice3": "Ständiger Schmerz im Rücken",
+      "choice4": "Krampfartige Schmerzen im Bauch",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist eine typische Ursache der Trigeminusneuralgie?",
+      "choice1": "Verletzung des Rückenmarks",
+      "choice2": "Mechanische Reizung durch Gefäßschlingen",
+      "choice3": "Virale Infektion der Atemwege",
+      "choice4": "Übermäßiger Alkoholkonsum",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Behandlungsmethode wird bei Trigeminusneuralgie häufig angewendet?",
+      "choice1": "Akupunktur",
+      "choice2": "Antiepileptika wie Carbamazepin",
+      "choice3": "Schmerzmittel wie Ibuprofen",
+      "choice4": "Verhaltenstherapie",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist der Unterschied zwischen primären und sekundären Hirntumoren?",
+      "choice1": "Primäre Tumoren wachsen außerhalb des Gehirns.",
+      "choice2": "Sekundäre Tumoren entstehen im Gehirn und verbreiten sich im Körper.",
+      "choice3": "Primäre Tumoren entstehen im Gehirn oder seinen Hüllstrukturen.",
+      "choice4": "Sekundäre Tumoren entstehen durch Verletzungen.",
+      "answer": 3,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Tumorart wächst am schnellsten und ist am bösartigsten?",
+      "choice1": "Glioblastom",
+      "choice2": "Astrozytom Grad 1",
+      "choice3": "Oligodendrogliom",
+      "choice4": "Meningeom",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Symptome sind typisch für Hirntumoren?",
+      "choice1": "Hirndruckzeichen, epileptische Anfälle, Herdsymptome",
+      "choice2": "Nur Kopfschmerzen und Übelkeit",
+      "choice3": "Lähmungen und Nackensteifigkeit",
+      "choice4": "Schluckstörungen und Muskelkrämpfe",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist ein Glioblastom?",
+      "choice1": "Ein gutartiger Tumor der Hirnrinde",
+      "choice2": "Ein hochmaligner Tumor der Gliazellen",
+      "choice3": "Ein Tumor des peripheren Nervensystems",
+      "choice4": "Ein langsamer Tumor ohne Metastasen",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Therapie wird bei Glioblastomen angewendet?",
+      "choice1": "Nur Chemotherapie",
+      "choice2": "Operation, gefolgt von Radio-Chemotherapie",
+      "choice3": "Reine Strahlentherapie",
+      "choice4": "Behandlung mit Schmerzmitteln",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welcher Tumor geht von den Hirnhäuten aus und ist meist gutartig?",
+      "choice1": "Glioblastom",
+      "choice2": "Meningeom",
+      "choice3": "Medulloblastom",
+      "choice4": "Astrozytom",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist ein Neurinom?",
+      "choice1": "Ein Tumor der Hirnhaut",
+      "choice2": "Ein Tumor der Myelinscheide eines Nerven",
+      "choice3": "Ein Tumor im Kleinhirn",
+      "choice4": "Ein Tumor der Gliazellen",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist das Leitsymptom des Akustikusneurinoms?",
+      "choice1": "Doppelsehen",
+      "choice2": "Einseitige Hörverschlechterung und Tinnitus",
+      "choice3": "Sehstörungen",
+      "choice4": "Lähmungen der Beine",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist das Hauptsymptom eines Medulloblastoms?",
+      "choice1": "Gedächtnisverlust",
+      "choice2": "Schwindel und Tinnitus",
+      "choice3": "Ataxie mit Fallneigung",
+      "choice4": "Lähmungen der Arme",
+      "answer": 3,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was sind Hirnmetastasen?",
+      "choice1": "Primäre Tumoren im Gehirn",
+      "choice2": "Tumoren des Rückenmarks",
+      "choice3": "Tochtergeschwülste von Tumoren außerhalb des Gehirns",
+      "choice4": "Tumoren der Gliazellen",
+      "answer": 3,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Art von Tumor metastasiert häufig ins Gehirn?",
+      "choice1": "Lebertumor",
+      "choice2": "Bronchialkarzinom",
+      "choice3": "Pankreaskarzinom",
+      "choice4": "Hauttumor",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Wie wird Epilepsie definiert?",
+      "choice1": "Wiederholte Anfälle ohne erkennbare Ursache",
+      "choice2": "Ein einzelner Anfall bei hoher Belastung",
+      "choice3": "Kopfschmerzen mit Bewusstlosigkeit",
+      "choice4": "Verlust des Gleichgewichtssinns",
+      "answer": 1,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Form des epileptischen Anfalls betrifft beide Gehirnhälften?",
+      "choice1": "Fokaler Anfall",
+      "choice2": "Tonisch-klonischer Anfall",
+      "choice3": "Jackson-Anfall",
+      "choice4": "Aura-Anfall",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Welche Symptome sind typisch für eine Absence?",
+      "choice1": "Zuckungen der Beine",
+      "choice2": "Verlust des Bewusstseins für Sekunden",
+      "choice3": "Schmerzen in den Gelenken",
+      "choice4": "Heftige Muskelkrämpfe",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    },
+    {
+      "question": "Was ist ein Status epilepticus?",
+      "choice1": "Ein kurzer Anfall ohne Bewusstseinsverlust",
+      "choice2": "Ein längerer Anfall oder Anfallsserie ohne Erholung",
+      "choice3": "Ein Anfall, der nur bei Kindern auftritt",
+      "choice4": "Ein Anfall ohne motorische Symptome",
+      "answer": 2,
+      "category": "Neurologie Teil 3"
+    }
+  ]
+
+
+
+
+

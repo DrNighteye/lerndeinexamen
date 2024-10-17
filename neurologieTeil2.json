@@ -1,0 +1,164 @@
+[
+  {
+    "question": "Was ist die häufigste Ursache für bakterielle Meningitis bei Erwachsenen?",
+    "choice1": "Streptococcus pneumoniae",
+    "choice2": "Neisseria meningitidis",
+    "choice3": "Listerien",
+    "choice4": "Staphylokokken",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was sind typische Symptome einer bakteriellen Meningitis?",
+    "choice1": "Schmerzhafte Nackensteifigkeit, Kopfschmerzen, hohes Fieber",
+    "choice2": "Erhöhte Temperatur, Übelkeit, Husten",
+    "choice3": "Hautausschlag, Gelenkschmerzen, Müdigkeit",
+    "choice4": "Lichtempfindlichkeit, Schwindel, Appetitlosigkeit",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was sind die häufigsten Erreger bei bakterieller Meningitis im Kindesalter?",
+    "choice1": "Pneumokokken, Meningokokken, Haemophilus influenzae",
+    "choice2": "E. coli, Streptokokken, Staphylokokken",
+    "choice3": "Corynebacterium diphtheriae, Klebsiella pneumoniae, Bacillus anthracis",
+    "choice4": "HIV, HSV, VZV",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was ist eine häufige Komplikation der bakteriellen Meningitis?",
+    "choice1": "Hirnödem mit der Gefahr der Einklemmung",
+    "choice2": "Fieberkrämpfe",
+    "choice3": "Kopfschmerz",
+    "choice4": "Übelkeit",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was ist das häufigste Symptom einer viralen Meningitis?",
+    "choice1": "Hohes Fieber",
+    "choice2": "Nackensteifigkeit",
+    "choice3": "Kopfschmerzen",
+    "choice4": "Bewusstseinsstörungen",
+    "answer": 3,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Welche Erreger können eine virale Meningitis verursachen?",
+    "choice1": "Enteroviren, Herpes-simplex-Virus, VZV",
+    "choice2": "Streptococcus pneumoniae, Neisseria meningitidis",
+    "choice3": "Escherichia coli, Staphylococcus aureus",
+    "choice4": "Borrelien, Listerien",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was sind typische Symptome einer Herpes-simplex-Virus-Enzephalitis?",
+    "choice1": "Psychotische Symptome, aphasische Symptome",
+    "choice2": "Erhöhte Temperatur, Halsschmerzen",
+    "choice3": "Husten, Schnupfen, Fieber",
+    "choice4": "Durchfall, Bauchschmerzen",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was ist eine häufige Komplikation der FSME?",
+    "choice1": "Hirnhautentzündung",
+    "choice2": "Akute Atemwegserkrankungen",
+    "choice3": "Herzmuskelentzündung",
+    "choice4": "Nierenversagen",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Wie wird die Lyme-Borreliose übertragen?",
+    "choice1": "Durch Zeckenbisse",
+    "choice2": "Durch direkten Kontakt mit infizierten Personen",
+    "choice3": "Durch kontaminierte Lebensmittel",
+    "choice4": "Durch Bluttransfusionen",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Welche Symptome treten bei einer Poliomyelitis auf?",
+    "choice1": "Schlaffe Lähmungen der Extremitäten",
+    "choice2": "Fieber und Halsschmerzen",
+    "choice3": "Hautausschlag und Juckreiz",
+    "choice4": "Kopfschmerzen und Müdigkeit",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Welche Therapie wird bei einer bakteriellen Meningitis empfohlen?",
+    "choice1": "Antibiotikatherapie",
+    "choice2": "Symptomatische Therapie",
+    "choice3": "Operative Behandlung",
+    "choice4": "Keine Therapie",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Welche Form der MS beginnt mit schubförmigen Schüben?",
+    "choice1": "Relapsing Remitting MS",
+    "choice2": "Secondary Progressive MS",
+    "choice3": "Primary Progressive MS",
+    "choice4": "Progressive Relapsing MS",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was sind häufige Frühsymptome der Multiplen Sklerose?",
+    "choice1": "Sehstörungen, Sensibilitätsstörungen",
+    "choice2": "Husten und Schnupfen",
+    "choice3": "Erbrechen und Durchfall",
+    "choice4": "Fieber und Kopfschmerzen",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was ist ein typisches Symptom einer Nackenbeugezeichen?",
+    "choice1": "Elektrisierendes Gefühl bei Beugung des Kopfes",
+    "choice2": "Stechende Schmerzen in der Brust",
+    "choice3": "Hohes Fieber",
+    "choice4": "Kopfschmerzen",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was ist die häufigste Ursache für neurologische Schädigungen bei FSME?",
+    "choice1": "Hirnhautentzündung",
+    "choice2": "Kreislaufversagen",
+    "choice3": "Neurologische Störungen",
+    "choice4": "Muskellähmung",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was ist die Inkubationszeit für Poliomyelitis?",
+    "choice1": "2-14 Tage",
+    "choice2": "4-7 Tage",
+    "choice3": "1-5 Tage",
+    "choice4": "3-10 Tage",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was ist das Hauptsymptom der Enzephalitis?",
+    "choice1": "Psychotische Symptome",
+    "choice2": "Kopfschmerzen und Fieber",
+    "choice3": "Hohes Fieber",
+    "choice4": "Nackensteifigkeit",
+    "answer": 2,
+    "category": "Neurologie Teil 2"
+  },
+  {
+    "question": "Was beschreibt die Therapie bei bakterieller Meningitis?",
+    "choice1": "Schnelle Antibiotikatherapie",
+    "choice2": "Langsame symptomatische Therapie",
+    "choice3": "Operative Behandlung",
+    "choice4": "Keine Therapie",
+    "answer": 1,
+    "category": "Neurologie Teil 2"
+  }
+]
