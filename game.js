@@ -99,7 +99,7 @@ incrementScore = num => {
 
 // Eventlistener für "Zur Kategorie"
 document.getElementById("categoryButton").addEventListener("click", () => {
-    window.location.href = "category.html";
+    window.location.href = "Category.html";
 });
 
 // Eventlistener für "Zur Startseite"
