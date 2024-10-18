@@ -1,1 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="AppStyle.css"> <!-- Verwende die vorhandene CSS-Datei -->
+  <link rel="stylesheet" href="feedback.css"> <!-- Feedback-spezifische CSS-Datei -->
+</head>
+<body>
+<div class="container">
+  <div id="feedback" class="flex-center flex-column">
+    <h1>Feedback</h1>
+    <form id="feedbackForm" onsubmit="sendFeedback(event)">
+      <input type="text" id="username" placeholder="Dein Name (optional)">
+      <textarea id="feedbackMessage" placeholder="Dein Feedback" required></textarea>
+      <button type="submit" class="btn">Absenden</button>
+    </form>
+    <a class="btn" href="index.html">Zurück zur Startseite</a>
+  </div>
+</div>
+<script src="feedback.js"></script>
+</body>
+</html>
 
