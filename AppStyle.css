@@ -124,6 +124,16 @@ h3 {
   border: 2px solid #107260; /* Rahmenfarbe */
   transition: background-color 0.3s ease, color 0.3s ease; /* Weiche Übergänge */
 }
+#feedback .btn{
+  font-size: 2rem; /* Schriftgröße */
+  padding: 1.5rem; /* Innenabstand */
+  margin: 1rem 0; /* Abstand oben und unten */
+  background-color: white; /* Hintergrundfarbe */
+  color: #107260; /* Textfarbe */
+  border-radius: 8px; /* Abgerundete Ecken */
+  border: 2px solid #107260; /* Rahmenfarbe */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Weiche Übergänge */
+}
 
 /* End-Bildschirm-Layout */
 #end {
