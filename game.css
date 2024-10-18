@@ -51,6 +51,21 @@
     text-align: center;
     font-size: 4rem;
 }
+/* Responsive Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+    .hud-prefix {
+        font-size: 1.5rem; /* Kleinere Schriftgröße auf Handys */
+    }
+
+    .hud-main-text {
+        font-size: 2.5rem; /* Kleinere Schriftgröße auf Handys */
+    }
+
+    #hud {
+        flex-direction: column; /* Elemente untereinander anordnen */
+        align-items: center; /* Zentriert die Elemente */
+    }
+}
 
 /* Progress Bar */
 #progressBar {
