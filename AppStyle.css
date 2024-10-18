@@ -221,13 +221,13 @@ input::placeholder {
 
 /* Score Styling */
 #finalScore {
-  font-size: 5rem; /* Einheitliche Schriftgröße für den Score */
-  margin: 1rem 0; /* Abstand nach oben und unten */
-  color: #ffffff; /* Schriftfarbe: Weiß */
-  text-align: center; /* Zentriert den Text */
+    font-size: 3rem; /* Einheitliche Schriftgröße für den Score */
+    margin: 1rem 0; /* Abstand nach oben und unten */
+    color: #ffffff; /* Schriftfarbe: Weiß */
+    text-align: center; /* Zentriert den Text */
 }
 
 #scoreValue {
-  font-size: inherit; /* Erbt die Schriftgröße vom #finalScore */
+    font-size: inherit; /* Erbt die Schriftgröße vom #finalScore */
 }
 
