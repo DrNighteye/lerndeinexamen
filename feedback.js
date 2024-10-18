@@ -22,7 +22,7 @@ function sendFeedback(event) {
 
 // Initialisiere EmailJS mit deiner User ID
 (function() {
-  emailjs.init("4cIfzeTVyX4E8clHQ"); // Ersetze 'YOUR_USER_ID' durch deine tatsächliche User ID von EmailJS
+  emailjs.init("3dBWxGDWcgd6hayLDm1I9"); // Ersetze 'YOUR_USER_ID' durch deine tatsächliche User ID von EmailJS
 })();
 
 function sendFeedback(event) {
