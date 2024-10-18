@@ -185,3 +185,25 @@ input::placeholder {
     transform: translateY(-2px); /* Leichte Bewegung nach oben */
     box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.2); /* Schatteneffekt */
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduziert den Abstand auf kleinen Bildschirmen */
+    }
+
+    .choice-container {
+        font-size: 1.2rem; /* Größere Schrift für bessere Lesbarkeit */
+        margin-bottom: 10px; /* Abstand zwischen den Auswahlmöglichkeiten */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Größere Überschrift */
+    }
+
+    .btn {
+        width: 100%; /* Button füllt den gesamten Bereich */
+        padding: 15px; /* Mehr Platz innerhalb der Buttons */
+        font-size: 1rem; /* Schriftgröße für die Buttons */
+    }
+}
+
