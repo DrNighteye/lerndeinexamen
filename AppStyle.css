@@ -230,4 +230,12 @@ input::placeholder {
 #scoreValue {
     font-size: inherit; /* Erbt die Schriftgröße vom #finalScore */
 }
+/* Responsive Schriftgröße für die Überschrift in der Startseite */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem; /* Kleinere Schriftgröße auf mobilen Geräten */
+        margin: 1rem 0; /* Abstand nach oben und unten anpassen */
+    }
+}
+
 
