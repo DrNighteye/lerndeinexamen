@@ -1,9 +1,8 @@
+// DOM-Elemente auswählen
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
-const progressBarFull = document.getElementById('progressBarFull');
-const nextButton = document.createElement("button"); // Button für die nächste Frage
 
 let currentQuestion = {};
 let acceptingAnswer = false;
@@ -14,7 +13,7 @@ let availableQuestions = [];
 // Fragen-Array
 let questions = [];
 
-// Hole die JSON-Datei aus dem localStorage
+// JSON-Datei aus dem localStorage laden
 const jsonFile = localStorage.getItem('selectedJsonFile');
 
 // JSON-Datei laden und das Spiel starten
@@ -24,45 +23,31 @@ fetch(jsonFile)
     questions = loadedQuestions;
     startGame();
   })
-  .catch((error) => {
-    console.error("Fehler beim Laden der JSON-Datei:", error);
-  });
+  .catch(error => console.error("Fehler beim Laden der JSON-Datei:", error));
 
 // Konstanten
 const Correct_Bonus = 5;
 const Max_Questions = 15;
 
 // Spiel starten
-startGame = () => {
+function startGame() {
   questionCounter = 0;
   score = 0;
-  availableQuestions = getRandomQuestion(questions, Max_Questions);
+  availableQuestions = [...questions]; // Kopiere das Fragen-Array
   getNewQuestion();
-};
-
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
 }
 
-function getRandomQuestion(questionsArray, num) {
-  const shuffled = [...questionsArray].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, num);
-}
-
-// Neue Frage holen
-getNewQuestion = () => {
-  if (availableQuestions.length === 0 || questionCounter >= Max_Questions) {
+// Zufällige Frage holen
+function getNewQuestion() {
+  if (questionCounter >= Max_Questions || availableQuestions.length === 0) {
     localStorage.setItem('mostRecentScore', score);
-    return window.location.assign("end.html");
+    return window.location.assign("end.html"); // Spielende
   }
 
   questionCounter++;
-  progressText.innerText = `Frage ${questionCounter}/${Max_Questions}`;
-  progressBarFull.style.width = `${(questionCounter / Max_Questions) * 100}%`;
+  progressText.innerText = `Frage ${questionCounter}/${Max_Questions}`; // Frage anzeigen
 
+  // Zufällige Frage auswählen
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
@@ -77,32 +62,39 @@ getNewQuestion = () => {
 
   // Füge die korrekte Antwort auch zum Antwort-Array hinzu
   const correctAnswerIndex = currentQuestion.answer; // Korrekter Index
-  shuffle(answerChoices); // Mische die Antworten
 
+  // Mische die Antworten
+  shuffle(answerChoices);
+
+  // Setze die gemischten Antworten und aktualisiere die Daten-Attribute
   choices.forEach((choice, index) => {
     choice.innerText = answerChoices[index]; // Setze die gemischten Antworten
     choice.dataset.number = index + 1; // Aktualisiere den Daten-Index
 
-    // Finde die neue Position der korrekten Antwort
+    // Setze das korrekte Attribut für die richtige Antwort
     if (answerChoices[index] === currentQuestion[`choice${correctAnswerIndex}`]) {
-      choice.dataset.correct = "true"; // Setze Attribut für die korrekte Antwort
+      choice.dataset.correct = "true"; // Setze korrektes Attribut
     } else {
-      choice.dataset.correct = "false"; // Setze Attribut für falsche Antworten
+      choice.dataset.correct = "false"; // Setze falsches Attribut
     }
 
-    choice.classList.remove("correct", "incorrect"); // Entferne vorherige Klassen
+    // Entferne vorherige Klassen, um Farben zurückzusetzen
+    choice.classList.remove("correct", "incorrect");
   });
 
-  availableQuestions.splice(questionIndex, 1);
+  availableQuestions.splice(questionIndex, 1); // Frage aus Pool entfernen
   acceptingAnswer = true;
+}
 
-  // Entferne den "Weiter" Button, falls vorhanden
-  if (nextButton.parentElement) {
-    nextButton.parentElement.removeChild(nextButton);
+// Funktion zum Mischen des Arrays
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
   }
-};
+}
 
-// Eventlistener für die Auswahl der Antworten
+// Eventlistener für die Antwort-Buttons
 choices.forEach(choice => {
   choice.addEventListener("click", e => {
     if (!acceptingAnswer) return;
@@ -111,43 +103,40 @@ choices.forEach(choice => {
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
 
-    const classToApply = selectedChoice.dataset.correct === "true" ? "correct" : "incorrect";
+    // Prüfe, ob die Antwort korrekt ist
+    const isCorrect = selectedChoice.dataset.correct === "true";
+    const classToApply = isCorrect ? "correct" : "incorrect";
 
-    if (classToApply === "correct") {
-      incrementScore(Correct_Bonus);
-    } else {
-      // Zeige die richtige Antwort an
+    // Wenn die Antwort falsch ist, zeige die richtige Antwort
+    if (!isCorrect) {
       const correctChoice = choices.find(choice => choice.dataset.correct === "true");
       correctChoice.classList.add("correct"); // Markiere die richtige Antwort
     }
 
-    selectedChoice.parentElement.classList.add(classToApply);
+    selectedChoice.parentElement.classList.add(classToApply); // Markiere die gewählte Antwort
 
-    // Füge den "Weiter" Button hinzu
-    nextButton.innerText = "Weiter";
-    nextButton.classList.add("btn"); // Klasse für den Button hinzufügen
-    nextButton.style.marginTop = "20px"; // Abstand hinzufügen
-    nextButton.style.width = "20rem"; // Gleiche Breite wie andere Buttons
-    nextButton.style.fontSize = "2rem"; // Gleiche Schriftgröße wie andere Buttons
+    // Score erhöhen, wenn die Antwort korrekt ist
+    if (isCorrect) {
+      incrementScore(Correct_Bonus);
+    }
 
-    // Zentriere den Button
-    nextButton.style.display = "block"; // Button als Block-Element anzeigen
-    nextButton.style.marginLeft = "auto"; // Links automatisch
-    nextButton.style.marginRight = "auto"; // Rechts automatisch
-    selectedChoice.parentElement.appendChild(nextButton);
-
-    // Event Listener für den "Weiter" Button
-    nextButton.addEventListener("click", () => {
+    // Zeige das Feedback und gehe nach einer Sekunde zur nächsten Frage
+    setTimeout(() => {
+      // Entferne die Klassen nach 1 Sekunde
       selectedChoice.parentElement.classList.remove(classToApply);
-      getNewQuestion();
-    });
+      choices.forEach(choice => {
+        choice.classList.remove("correct", "incorrect"); // Entferne alle Klassen von den Antwortmöglichkeiten
+      });
+      getNewQuestion(); // Nächste Frage laden
+    }, 1000);
   });
 });
 
-incrementScore = num => {
+// Score erhöhen
+function incrementScore(num) {
   score += num;
-  scoreText.innerText = score;
-};
+  scoreText.innerText = score; // Zeige den Score an
+}
 
 // Eventlistener für "Zur Kategorie"
 document.getElementById("categoryButton").addEventListener("click", () => {
