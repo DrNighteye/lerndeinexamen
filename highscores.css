@@ -1,0 +1,45 @@
+#highScoresTable {
+  width: 100%; /* Nimmt die volle Breite ein */
+  border-collapse: collapse; /* Entfernt den Abstand zwischen den Zellen */
+  margin-top: 1rem; /* Abstand über der Tabelle */
+}
+
+#highScoresTable th, #highScoresTable td {
+  border: 1px solid #fff; /* Rahmen um die Zellen */
+  padding: 1rem; /* Innenabstand in den Zellen */
+  text-align: center; /* Zentriert den Text */
+}
+
+#highScoresTable th {
+  background-color: #041514; /* Hintergrundfarbe für die Kopfzeile */
+}
+
+#highScoresTable tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); /* Alternierende Zeilenfarbe */
+}
+
+#highScoresTable tr:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover-Effekt für Zeilen */
+}
+
+#highScoresTable {
+  width: 90%; /* Breite der Tabelle auf 90% setzen */
+  max-width: 600px; /* Maximale Breite */
+  margin: 0 auto; /* Zentriert die Tabelle */
+  border-collapse: collapse; /* Entfernt Abstände zwischen den Zellen */
+}
+
+#highScoresTable th, #highScoresTable td {
+  padding: 8px; /* Innenabstand reduzieren */
+  text-align: left; /* Links ausgerichteter Text */
+  border: 1px solid #ddd; /* Rand um Zellen */
+}
+
+@media (max-width: 768px) {
+  #highScoresTable th, #highScoresTable td {
+    font-size: 1.2rem; /* Schriftgröße für Mobilgeräte anpassen */
+    padding: 6px; /* Innenabstand für Mobilgeräte */
+  }
+
+}
+
