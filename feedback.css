@@ -2,12 +2,15 @@
 
 /* Container für das Feedback-Formular */
 #feedback {
-  max-width: 500px; /* Maximale Breite des Formulars */
-  width: 100%; /* Nimmt die gesamte Breite ein */
-  padding: 20px; /* Innenabstand für das Formular */
-  border-radius: 8px; /* Abgerundete Ecken */
-  background-color: rgba(255, 255, 255, 0.1); /* Leicht transparenter Hintergrund */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten unter dem Formular */
+  padding: 10px;
+  margin-outside: 2.4rem;
+  margin-bottom: 1rem; /* Abstand nach unten */
+  box-sizing: content-box; /* Enthält nur den Inhalt ohne Padding */
+  border: 2.9rem solid #041514; /* Weiße Rahmen um die Überschriften */
+  border-width: thick; /* Dicke Rahmenlinie */
+  border-radius: 1.5rem; /* Abgerundete Ecken */
+  box-shadow: 0 0.4rem 1.4rem rgb(0, 0, 0); /* Schatten unter den Überschriften */
+
 }
 
 /* Stil für die Eingabefelder */
@@ -42,4 +45,3 @@ textarea {
     font-size: 3.5rem; /* Kleinere Schriftgröße auf mobilen Geräten */
   }
 }
-
