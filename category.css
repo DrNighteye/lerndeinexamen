@@ -12,7 +12,7 @@ body {
 
 .category-container {
 
-  background: #000;
+  background: #042326;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgb(82, 165, 93);
@@ -40,15 +40,23 @@ body {
 }
 
 .btn {
-  margin-top: 5px; /* Abstand nach oben */
+  #highscores .btn{
+    margin: 5px auto ;
+    font-size: 2rem; /* Schriftgröße */
+    padding: 1.5rem; /* Innenabstand */
+    background-color: white; /* Hintergrundfarbe */
+    color: #107260; /* Textfarbe */
+    border-radius: 8px; /* Abgerundete Ecken */
+    border: 2px solid #107260; /* Rahmenfarbe */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Weiche Übergänge */
+  }
   padding: 10px 20px; /* Padding für die Schaltflächen */
   background-color: white; /* Button-Hintergrundfarbe */
   color: black; /* Button-Schriftfarbe */
-  text: bold;
-  border: none; /* Kein Rahmen */
   border-radius: 5px; /* Abgerundete Ecken */
   cursor: pointer; /* Zeiger-Cursor bei Hover */
 }
+
 
 .btn:hover {
   background-color: #1d393c; /* Hover-Effekt für Button */
