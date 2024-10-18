@@ -67,7 +67,7 @@ getNewQuestion = () => {
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
 
-  // Antworten in ein Array umwandeln und mischen
+  // Antworten in ein Array umwandeln
   const answerChoices = [
     currentQuestion.choice1,
     currentQuestion.choice2,
@@ -75,11 +75,21 @@ getNewQuestion = () => {
     currentQuestion.choice4
   ];
 
-  shuffle(answerChoices);
+  // Füge die korrekte Antwort auch zum Antwort-Array hinzu
+  const correctAnswerIndex = currentQuestion.answer; // Korrekter Index
+  shuffle(answerChoices); // Mische die Antworten
 
   choices.forEach((choice, index) => {
-    choice.innerText = answerChoices[index];
-    choice.dataset.number = index + 1;
+    choice.innerText = answerChoices[index]; // Setze die gemischten Antworten
+    choice.dataset.number = index + 1; // Aktualisiere den Daten-Index
+
+    // Finde die neue Position der korrekten Antwort
+    if (answerChoices[index] === currentQuestion[`choice${correctAnswerIndex}`]) {
+      choice.dataset.correct = "true"; // Setze Attribut für die korrekte Antwort
+    } else {
+      choice.dataset.correct = "false"; // Setze Attribut für falsche Antworten
+    }
+
     choice.classList.remove("correct", "incorrect"); // Entferne vorherige Klassen
   });
 
@@ -101,15 +111,14 @@ choices.forEach(choice => {
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
 
-    const classToApply =
-      parseInt(selectedAnswer) === currentQuestion.answer ? "correct" : "incorrect";
+    const classToApply = selectedChoice.dataset.correct === "true" ? "correct" : "incorrect";
 
     if (classToApply === "correct") {
       incrementScore(Correct_Bonus);
     } else {
       // Zeige die richtige Antwort an
-      const correctChoice = choices.find(choice => choice.dataset["number"] == currentQuestion.answer);
-      correctChoice.classList.add("correct");
+      const correctChoice = choices.find(choice => choice.dataset.correct === "true");
+      correctChoice.classList.add("correct"); // Markiere die richtige Antwort
     }
 
     selectedChoice.parentElement.classList.add(classToApply);
