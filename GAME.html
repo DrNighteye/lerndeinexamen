@@ -4,33 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prüfungsvorbereitung - Spiel</title>
+
+  <!-- CSS-Dateien -->
   <link rel="stylesheet" href="AppStyle.css">
   <link rel="stylesheet" href="game.css">
 </head>
 <body>
 <div class="container">
   <div id="game" class="justify-center flex-column">
+
+    <!-- HUD-Bereich für Frage und Score -->
     <div id="hud">
       <div class="hud-item">
-        <p id="progressText" class="hud-prefix">Frage</p>
-        <div id="progressBar">
-          <div id="progressBarFull"></div>
-        </div>
+        <p class="hud-prefix">Frage</p>
+        <p id="progressText" class="hud-main-text">Frage 1/15</p>
       </div>
-
       <div class="hud-item">
         <p class="hud-prefix">Score</p>
-        <h1 class="hud-main-text" id="score">0</h1>
+        <h1 id="score" class="hud-main-text">0</h1>
       </div>
     </div>
 
-    <!-- Neue Fortschrittsleiste für korrekte Antworten -->
-    <div id="correctProgressBar">
-      <div id="correctProgressBarFull"></div>
-    </div>
-
+    <!-- Frage-Text -->
     <h2 id="question">Frage wird geladen...</h2>
 
+    <!-- Antwortmöglichkeiten -->
     <div class="choice-container">
       <p class="choice-prefix">A</p>
       <p class="choice-text" data-number="1"></p>
@@ -48,15 +46,16 @@
       <p class="choice-text" data-number="4"></p>
     </div>
 
+    <!-- Buttons für Navigation -->
     <div class="actions">
       <button id="homeButton" class="btn">Zurück zur Startseite</button>
-    </div>
-    <div class="actions">
       <button id="categoryButton" class="btn">Zurück zur Kategorie</button>
     </div>
 
   </div>
 </div>
+
+<!-- JavaScript -->
 <script src="game.js"></script>
 </body>
 </html>
