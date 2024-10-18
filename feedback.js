@@ -32,7 +32,7 @@ function sendFeedback(event) {
   const feedbackMessage = document.getElementById("feedbackMessage").value; // Feedback-Nachricht abrufen
 
   // E-Mail senden
-  emailjs.send("Quizzer-Examen", "template_pqiq0kk", {
+  emailjs.send("service_yz2lxio", "template_pqiq0kk", {
     username: username,
     message: feedbackMessage
   })
