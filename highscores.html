@@ -1,19 +1,52 @@
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Highscore Board</title>
-    <link rel="stylesheet" href="AppStyle.css">
-    <link rel="stylesheet" href="highscores.css">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Highscore Board</title>
+  <link rel="stylesheet" href="AppStyle.css">
+  <link rel="stylesheet" href="highscores.css">
 </head>
 <body>
 <div class="container">
-    <div id="highscores" class="flex-center flex-column">
-        <h1>High Scores</h1>
-        <ul id="highScoresList"></ul> <!-- Korrekte ID im <ul>-Tag -->
-        <a class="btn" href="index.html">Home</a>
-    </div>
+  <div id="highscores" class="flex-center flex-column">
+    <h1>High Scores</h1>
+    <table id="highScoresTable">
+      <thead>
+      <tr>
+        <th>Benutzername</th>
+        <th>Punkte</th>
+      </tr>
+      </thead>
+      <tbody id="highScoresList"></tbody>
+    </table>
+    <a class="btn" href="index.html">Home</a> <!-- Button zum Zurückkehren -->
+  </div>
 </div>
-<script src="highscores.js"></script>
+<script>
+  // Lade die gespeicherten Highscores aus localStorage
+  const highScores = JSON.parse(localStorage.getItem("highScores")) || []; // Setze Default-Wert auf leeres Array
+
+  // Sortiere die Highscores nach Punktzahl und behalte die Top 5
+  highScores.sort((a, b) => b.score - a.score); // Absteigende Sortierung
+  const topScores = highScores.slice(0, 5); // Nimm nur die Top 5
+
+  const highScoresList = document.getElementById("highScoresList");
+
+  // Füge jede gespeicherte Punktzahl in die Tabelle ein
+  topScores.forEach(score => {
+    const row = document.createElement("tr"); // Erstelle eine neue Zeile
+    const usernameCell = document.createElement("td"); // Erstelle die Zelle für den Benutzernamen
+    const scoreCell = document.createElement("td"); // Erstelle die Zelle für die Punktzahl
+
+    usernameCell.textContent = score.username; // Setze den Benutzernamen
+    scoreCell.textContent = score.score; // Setze die Punktzahl
+
+    row.appendChild(usernameCell); // Füge die Benutzername-Zelle zur Zeile hinzu
+    row.appendChild(scoreCell); // Füge die Punkte-Zelle zur Zeile hinzu
+    highScoresList.appendChild(row); // Füge die Zeile zur Tabelle hinzu
+  });
+</script>
 </body>
 </html>
