@@ -176,6 +176,17 @@ input::placeholder {
   border: 2px solid #107260; /* Rahmenfarbe */
   transition: background-color 0.3s ease, color 0.3s ease; /* Weiche Übergänge */
 }
+/* Responsive Schriftgröße für die Überschrift in der Startseite */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem; /* Kleinere Schriftgröße auf mobilen Geräten */
+    margin: 1rem 0; /* Abstand nach oben und unten anpassen */
+  }
+  /* Stil für das Input-Feld */
+  .typetext {
+    color: black; /* Schriftfarbe für den eingegebenen Text */
+  }
+
 
 /* Start-Box */
 .start-box {
@@ -213,16 +224,5 @@ input::placeholder {
   transform: translateY(-2px); /* Leichte Bewegung nach oben */
   box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.2); /* Schatteneffekt */
 }
-
-/* Responsive Schriftgröße für die Überschrift in der Startseite */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 4rem; /* Kleinere Schriftgröße auf mobilen Geräten */
-    margin: 1rem 0; /* Abstand nach oben und unten anpassen */
-  }
-  /* Stil für das Input-Feld */
-  .typetext {
-    color: black; /* Schriftfarbe für den eingegebenen Text */
-  }
 
 }
