@@ -186,6 +186,8 @@ input::placeholder {
     box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.2); /* Schatteneffekt */
 }
 
+/* Bestehende CSS-Regeln */
+
 @media (max-width: 768px) {
     .container {
         padding: 10px; /* Reduziert den Abstand auf kleinen Bildschirmen */
@@ -198,6 +200,11 @@ input::placeholder {
 
     h2 {
         font-size: 1.5rem; /* Größere Überschrift */
+    }
+
+    h1 {
+        font-size: 3rem; /* Kleinere Schriftgröße für mobile Geräte */
+        margin-bottom: 1rem; /* Abstand nach unten anpassen */
     }
 
     .btn {
