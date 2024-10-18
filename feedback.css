@@ -1,1 +1,45 @@
+/* Feedback-spezifische CSS-Datei */
+
+/* Container für das Feedback-Formular */
+#feedback {
+  max-width: 500px; /* Maximale Breite des Formulars */
+  width: 100%; /* Nimmt die gesamte Breite ein */
+  padding: 20px; /* Innenabstand für das Formular */
+  border-radius: 8px; /* Abgerundete Ecken */
+  background-color: rgba(255, 255, 255, 0.1); /* Leicht transparenter Hintergrund */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten unter dem Formular */
+}
+
+/* Stil für die Eingabefelder */
+input, textarea {
+  width: 100%; /* Volle Breite */
+  padding: 10px; /* Innenabstand */
+  margin-bottom: 10px; /* Abstand nach unten */
+  font-size: 1.6rem; /* Schriftgröße */
+  border: 1px solid #ddd; /* Rahmenfarbe */
+  border-radius: 4px; /* Abgerundete Ecken */
+  background-color: #fff; /* Hintergrundfarbe für Eingabefelder */
+  color: #333; /* Textfarbe für Eingabefelder */
+}
+
+/* Stil für das Textarea-Feld */
+textarea {
+  height: 150px; /* Höhe für das Textarea */
+  resize: none; /* Verhindert das Ändern der Größe */
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+  #feedback {
+    padding: 15px; /* Weniger Innenabstand auf mobilen Geräten */
+  }
+
+  input, textarea {
+    font-size: 1.4rem; /* Kleinere Schriftgröße auf mobilen Geräten */
+  }
+
+  h1 {
+    font-size: 3.5rem; /* Kleinere Schriftgröße auf mobilen Geräten */
+  }
+}
 
