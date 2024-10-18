@@ -91,15 +91,15 @@ h3 {
   width: 20rem; /* Breite des Buttons */
   text-align: center; /* Zentrierter Text */
   border: 0.2rem solid darkslategray; /* Rahmenfarbe */
-  border-radius: 0.5rem; /* Abgerundete Ecken */
+  border-radius: 1.5rem; /* Abgerundete Ecken */
   box-shadow: 0px 1px 2px 0px rgb(47, 78, 78),
   1px 2px 4px 0px rgb(14, 38, 24),
   2px 4px 8px 0px rgb(57, 89, 62),
   2px 4px 16px 0px rgb(92, 115, 93); /* Schatten */
   margin-bottom: 1rem; /* Abstand nach unten */
   text-decoration: none; /* Entfernt Unterstreichungen */
-  color: Black; /* Textfarbe Schwarz */
-  background-color: #506668; /* Hintergrundfarbe */
+  color: #2f4f4f; /* Textfarbe Schwarz */
+  background-color: #ffffff; /* Hintergrundfarbe */
 }
 
 .btn:hover {
@@ -114,7 +114,8 @@ h3 {
   box-shadow: none; /* Entfernt den Schatten */
   transform: none; /* Keine Bewegung */
 }
-#highscores .btn{
+
+#highscores .btn {
   font-size: 2rem; /* Schriftgröße */
   padding: 1.5rem; /* Innenabstand */
   margin: 1rem 0; /* Abstand oben und unten */
@@ -124,7 +125,8 @@ h3 {
   border: 2px solid #107260; /* Rahmenfarbe */
   transition: background-color 0.3s ease, color 0.3s ease; /* Weiche Übergänge */
 }
-#feedback .btn{
+
+#feedback .btn {
   font-size: 2rem; /* Schriftgröße */
   padding: 1.5rem; /* Innenabstand */
   margin: 1rem 0; /* Abstand oben und unten */
@@ -166,7 +168,8 @@ input {
 input::placeholder {
   color: #aaa; /* Platzhalterfarbe */
 }
-#end .btn{
+
+#end .btn {
   font-size: 2rem; /* Schriftgröße */
   padding: 1.5rem; /* Innenabstand */
   margin: 1rem 0; /* Abstand oben und unten */
@@ -176,17 +179,6 @@ input::placeholder {
   border: 2px solid #107260; /* Rahmenfarbe */
   transition: background-color 0.3s ease, color 0.3s ease; /* Weiche Übergänge */
 }
-/* Responsive Schriftgröße für die Überschrift in der Startseite */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 4rem; /* Kleinere Schriftgröße auf mobilen Geräten */
-    margin: 1rem 0; /* Abstand nach oben und unten anpassen */
-  }
-  /* Stil für das Input-Feld */
-  .typetext {
-    color: black; /* Schriftfarbe für den eingegebenen Text */
-  }
-
 
 /* Start-Box */
 .start-box {
@@ -203,26 +195,53 @@ input::placeholder {
   text-align: center; /* Zentrierter Text */
   max-width: 600px; /* Maximale Breite */
   width: 100%; /* Nimmt die gesamte Breite ein */
+  display: flex; /* Flexbox für zentrierte Inhalte */
+  flex-direction: column; /* Kinder-Elemente vertikal anordnen */
+  justify-content: center; /* Vertikal zentrieren */
 }
 
-/* Buttons innerhalb der Start-Box */
-.start-box .btn {
-  font-size: 2rem; /* Schriftgröße */
-  padding: 1.5rem; /* Innenabstand */
-  margin: 1rem 0; /* Abstand oben und unten */
-  background-color: white; /* Hintergrundfarbe */
-  color: #107260; /* Textfarbe */
-  border-radius: 8px; /* Abgerundete Ecken */
-  border: 2px solid #107260; /* Rahmenfarbe */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Weiche Übergänge */
+/* Titel-Stil für die Start-Box */
+.start-box h1 {
+  margin: 1rem; /* Entfernt Außenabstände */
+  padding: 1rem; /* Innenabstand für den Titel */
+  font-size: 5.4rem; /* Schriftgröße für h1 */
 }
 
-.start-box .btn:hover {
-  background-color: #107260; /* Hintergrundfarbe beim Hover */
-  color: white; /* Textfarbe beim Hover */
-  cursor: pointer; /* Zeigt den Zeiger beim Hover */
-  transform: translateY(-2px); /* Leichte Bewegung nach oben */
-  box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+/* Progressbar-Container */
+.progress-container {
+  width: 100%; /* Volle Breite */
+  display: flex; /* Flexbox für zentrierte Inhalte */
+  justify-content: center; /* Horizontal zentrieren */
+  align-items: center; /* Vertikal zentrieren */
+  margin-top: 20px; /* Abstand oben */
 }
 
+/* Progressbar */
+.progress-bar {
+  width: 90%; /* Breite der Progressbar */
+  max-width: 600px; /* Maximalbreite für große Bildschirme */
+  height: 2rem; /* Höhe der Progressbar */
+  background-color: #ddd; /* Hintergrundfarbe */
+  border-radius: 1rem; /* Abgerundete Ecken */
+  overflow: hidden; /* Überlauf verstecken */
+  position: relative; /* Für das Kind-Element */
+}
+
+.progress-bar span {
+  display: block; /* Block-Element */
+  height: 100%; /* Höhe füllen */
+  background-color: #107260; /* Farbe des Fortschritts */
+  width: 0; /* Startbreite, wird durch JS angepasst */
+  transition: width 0.3s; /* Animation für den Fortschritt */
+}
+
+/* Responsive Anpassungen für h1 */
+@media (max-width: 768px) {
+  .start-box h1 {
+    font-size: 4rem; /* Kleinere Schriftgröße für h1 auf mobilen Geräten */
+  }
+
+  .progress-container {
+    margin-top: 15px; /* Weniger Abstand oben auf mobilen Geräten */
+  }
 }
