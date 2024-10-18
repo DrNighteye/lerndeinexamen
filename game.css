@@ -112,41 +112,6 @@
     transform: translateY(0);
 }
 
-/* Neue Progressbar für richtige Antworten */
-#correctProgress {
-    width: 20rem;
-    height: 4rem;
-    border: 0.3rem solid darkslategray;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    overflow: hidden; /* Verhindert Überlaufen des Inhalts */
-    display: flex;
-    margin-top: 1.5rem;
-}
-
-#correctProgressBarFull {
-    width: 0.001%; /* Startwert */
-    height: 100%; /* Volle Höhe des Containers */
-    background-color: darkslategray;
-    transition: width 0.3s ease; /* Weiche Animation */
-}
-#correctProgressBar {
-    width: 20rem;
-    height: 2rem;
-    border: 0.2rem solid #28a745;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    margin-top: 1rem;
-
-}
-
-#correctProgressBarFull {
-    position: relative;
-    width: 0.001%;
-    height: 100%;
-    background-color: #28a745;
-    transition: width 0.3s ease;
-}
 .categoryButton {
     width: 100%; /* Button füllt die gesamte Breite */
     padding: 12px; /* Innenabstand */
