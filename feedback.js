@@ -17,4 +17,3 @@ function sendFeedback(event) {
   // Formular zurücksetzen
   document.getElementById("feedbackForm").reset();
 }
-
