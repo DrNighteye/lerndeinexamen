@@ -74,7 +74,19 @@ h1 {
     }
 
     .btn {
-        font-size: 2rem; /* Kleinere Schriftgröße für Buttons */
+       /* Kleinere Schriftgröße für Buttons */
         padding: 0.8rem; /* Weniger Innenabstand */
+        display: center;
+  font-size: 2.9rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  text-align: center;
+  border: 2px solid darkslategray;
+  border-radius: 1.5rem;
+  background-color: #ffffff;
+  color: #107260;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
     }
 }
