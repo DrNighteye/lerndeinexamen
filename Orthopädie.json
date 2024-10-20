@@ -1,0 +1,137 @@
+[
+  {
+    "question": "Welche Bildgebungsmodalität eignet sich am besten zur Weichteildiagnostik in der Orthopädie?",
+    "choice1": "Röntgen",
+    "choice2": "MRT",
+    "choice3": "CT",
+    "choice4": "Sonographie",
+    "answer": 2,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welche degenerative Erkrankung führt typischerweise zu einer Verengung des Spinalkanals?",
+    "choice1": "Bandscheibenvorfall",
+    "choice2": "Osteoporose",
+    "choice3": "Spinalkanalstenose",
+    "choice4": "Skoliose",
+    "answer": 3,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welche Struktur ist bei einem Morbus Baastrup betroffen?",
+    "choice1": "Hüftkopf",
+    "choice2": "Dornfortsätze der Wirbelsäule",
+    "choice3": "Kniegelenksknorpel",
+    "choice4": "Schambein",
+    "answer": 2,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welche Hüftgelenksdeformation ist bei einer Hüftdysplasie typisch?",
+    "choice1": "Unzureichende Überdachung des Hüftkopfes",
+    "choice2": "Verengter Gelenkspalt",
+    "choice3": "Erhöhte Ossifikation des Acetabulums",
+    "choice4": "Knochenfragmente im Hüftgelenk",
+    "answer": 1,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welcher Test ist sinnvoll, um eine Trendelenburg-Gangstörung zu identifizieren?",
+    "choice1": "Lasègue-Test",
+    "choice2": "Duchenne-Zeichen",
+    "choice3": "Hoffmann-Zeichen",
+    "choice4": "Jobe-Test",
+    "answer": 2,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welches Medikament wird typischerweise zur Behandlung von Osteoporose eingesetzt?",
+    "choice1": "Bisphosphonate",
+    "choice2": "Ibuprofen",
+    "choice3": "Metformin",
+    "choice4": "Beta-Blocker",
+    "answer": 1,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welche Komplikation kann bei einer Hüftprothese durch Zement entstehen?",
+    "choice1": "Vermehrte Knochenbildung",
+    "choice2": "Zementaustritt in den Spinalkanal",
+    "choice3": "Entzündung der Gelenkkapsel",
+    "choice4": "Fraktur des Femurkopfs",
+    "answer": 2,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welche degenerative Erkrankung betrifft sowohl Knochen als auch Gelenkkapsel und periartikuläre Muskulatur?",
+    "choice1": "Coxarthrose",
+    "choice2": "Osteoporose",
+    "choice3": "Hüftkopfnekrose",
+    "choice4": "Skoliose",
+    "answer": 1,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welcher Therapieansatz wird bei einer Skoliose ab einem Krümmungswinkel von 20° empfohlen?",
+    "choice1": "Nur Physiotherapie",
+    "choice2": "Operative Derotation",
+    "choice3": "Korsettversorgung",
+    "choice4": "Intraartikuläre Injektionen",
+    "answer": 3,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Was ist das Hauptmerkmal der Spinalkanalstenose?",
+    "choice1": "Vorwölbung der Bandscheibe",
+    "choice2": "Verengung des Spinalkanals",
+    "choice3": "Gelenkdegeneration",
+    "choice4": "Bruch der Wirbelkörper",
+    "answer": 2,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welche klinische Erscheinung ist typisch für eine aktivierte Arthrose?",
+    "choice1": "Synovitis und Gelenkerguss",
+    "choice2": "Versteifung der Wirbelkörper",
+    "choice3": "Fehlstellung des Beckens",
+    "choice4": "Verlängerung der Extremitäten",
+    "answer": 1,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welche der folgenden Erkrankungen verursacht oft eine verminderte Knochendichte?",
+    "choice1": "Hüftdysplasie",
+    "choice2": "Osteoporose",
+    "choice3": "Morbus Baastrup",
+    "choice4": "Skoliose",
+    "answer": 2,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welche Bildgebungsmethode eignet sich am besten für die Diagnose eines Bandscheibenvorfalls?",
+    "choice1": "MRT",
+    "choice2": "Röntgen",
+    "choice3": "CT",
+    "choice4": "Sonographie",
+    "answer": 1,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welche therapeutische Maßnahme wird bei Morbus Perthes häufig angewendet?",
+    "choice1": "Medikamentöse Schmerztherapie",
+    "choice2": "Korsettversorgung",
+    "choice3": "Intraartikuläre Infiltration",
+    "choice4": "Kontainment-Verbesserung",
+    "answer": 4,
+    "category": "Orthopädie"
+  },
+  {
+    "question": "Welche Veränderung im Röntgenbild spricht für eine Coxarthrose?",
+    "choice1": "Verbreiterter Gelenkspalt",
+    "choice2": "Gelenkspaltverschmälerung",
+    "choice3": "Aufgelöste Kapselstruktur",
+    "choice4": "Osteopenie",
+    "answer": 2,
+    "category": "Orthopädie"
+  }
+]
