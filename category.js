@@ -33,5 +33,5 @@ function selectCategory(category) {
   localStorage.setItem('selectedJsonFile', jsonFile);
 
   // Weiterleitung zur Spielseite
-  window.location.href = 'GAME.html';
+  window.location.href = 'game.html';
 }
