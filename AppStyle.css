@@ -1,247 +1,80 @@
 /* Globale Einstellungen */
 :root {
-  background-color: #042326; /* Hintergrundfarbe für die gesamte Seite */
-  font-size: 62.5%; /* Basisgröße für Rem-Einheiten (1rem = 10px) */
+    background-color: #042326; /* Hintergrundfarbe für die gesamte Seite */
+    font-size: 62.5%; /* Basisgröße für Rem-Einheiten (1rem = 10px) */
 }
 
 /* Setze globale Stile für alle Elemente */
 * {
-  box-sizing: border-box; /* Padding und Border werden in die Gesamtgröße einbezogen */
-  font-family: Arial, Helvetica, sans-serif; /* Schriftart für die gesamte Seite */
-  margin: 0; /* Entfernt Außenabstände */
-  padding: 0; /* Entfernt Innenabstände */
-  color: #ffffff; /* Standard-Textfarbe: Weiß */
+    box-sizing: border-box; /* Padding und Border werden in die Gesamtgröße einbezogen */
+    font-family: Arial, Helvetica, sans-serif; /* Schriftart für die gesamte Seite */
+    margin: 0; /* Entfernt Außenabstände */
+    padding: 0; /* Entfernt Innenabstände */
+    color: #ffffff; /* Standard-Textfarbe: Weiß */
 }
 
 /* Container für den gesamten Inhalt */
 .container {
-  box-sizing: border-box;
-  width: 100vw; /* Nimmt die volle Breite des Viewports ein */
-  height: 100vh; /* Nimmt die volle Höhe des Viewports ein */
-  display: flex; /* Flexbox zum Zentrieren des Inhalts */
-  justify-content: center; /* Zentriert den Inhalt horizontal */
-  align-items: center; /* Zentriert den Inhalt vertikal */
-  max-width: 80rem; /* Maximale Breite des Containers */
-  margin: 0 auto; /* Zentriert den Container innerhalb der Seite */
-  padding: 2rem; /* Innenabstand für den Container */
-}
-
-.container > * {
-  width: 100%; /* Die Breite wird automatisch an den Inhalt angepasst */
-}
-
-/* Typografie */
-h1, h2, h3, h4 {
-  margin-outside: 2.4rem;
-  margin-bottom: 1rem; /* Abstand nach unten */
-  box-sizing: content-box; /* Enthält nur den Inhalt ohne Padding */
-  border: 2.9rem solid #041514; /* Weiße Rahmen um die Überschriften */
-  border-width: thick; /* Dicke Rahmenlinie */
-  border-radius: 1.5rem; /* Abgerundete Ecken */
-  box-shadow: 0 0.4rem 1.4rem rgb(0, 0, 0); /* Schatten unter den Überschriften */
-}
-
-h1 {
-  font-size: 5.4rem; /* Schriftgröße für h1 */
-  padding: 0.5rem; /* Leichter Innenabstand */
-}
-
-h1 > span {
-  font-size: 2.4rem; /* Schriftgröße für span innerhalb von h1 */
-  font-weight: 200; /* Halbfette Schrift */
-}
-
-h2 {
-  font-size: 2.4rem;
-  font-weight: 500;
-}
-
-h3 {
-  font-size: 2.8rem;
-  font-weight: 500;
-}
-
-/* Flexbox-Helferklassen */
-.flex-column {
-  display: flex;
-  flex-direction: column; /* Kinder-Elemente werden vertikal gestapelt */
-}
-
-.flex-center {
-  justify-content: center; /* Zentriert den Inhalt horizontal */
-  align-items: center; /* Zentriert den Inhalt vertikal */
-}
-
-.justify-center {
-  justify-content: center; /* Zentriert nur horizontal */
-}
-
-.text-center {
-  text-align: justify; /* Text wird gleichmäßig ausgerichtet */
-}
-
-.hidden {
-  display: none; /* Element wird ausgeblendet */
-}
-
-/* Buttons */
-.btn {
-  font-size: 2.9rem; /* Schriftgröße */
-  padding: 1rem 0; /* Innenabstand oben und unten */
-  width: 20rem; /* Breite des Buttons */
-  text-align: center; /* Zentrierter Text */
-  border: 0.2rem solid darkslategray; /* Rahmenfarbe */
-  border-radius: 1.5rem; /* Abgerundete Ecken */
-  box-shadow: 0px 1px 2px 0px rgb(47, 78, 78),
-  1px 2px 4px 0px rgb(14, 38, 24),
-  2px 4px 8px 0px rgb(57, 89, 62),
-  2px 4px 16px 0px rgb(92, 115, 93); /* Schatten */
-  margin-bottom: 1rem; /* Abstand nach unten */
-  text-decoration: none; /* Entfernt Unterstreichungen */
-  color: #2f4f4f; /* Textfarbe Schwarz */
-  background-color: #ffffff; /* Hintergrundfarbe */
-}
-
-.btn:hover {
-  cursor: pointer; /* Zeigt den Zeiger beim Hover an */
-  box-shadow: 0 0.4rem 1.4rem rgb(47, 79, 79); /* Schatteneffekt beim Hover */
-  transform: translateY(-0.1rem); /* Leichte Bewegung nach oben */
-  transition: transform 150ms; /* Weiche Animation */
-}
-
-.btn[disabled]:hover {
-  cursor: not-allowed; /* Verändert den Cursor, wenn der Button deaktiviert ist */
-  box-shadow: none; /* Entfernt den Schatten */
-  transform: none; /* Keine Bewegung */
-}
-
-#highscores .btn {
-  font-size: 2rem; /* Schriftgröße */
-  padding: 1.5rem; /* Innenabstand */
-  margin: 1rem 0; /* Abstand oben und unten */
-  background-color: white; /* Hintergrundfarbe */
-  color: #107260; /* Textfarbe */
-  border-radius: 8px; /* Abgerundete Ecken */
-  border: 2px solid #107260; /* Rahmenfarbe */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Weiche Übergänge */
-}
-
-#feedback .btn {
-  font-size: 2rem; /* Schriftgröße */
-  padding: 1.5rem; /* Innenabstand */
-  margin: 1rem 0; /* Abstand oben und unten */
-  background-color: white; /* Hintergrundfarbe */
-  color: #107260; /* Textfarbe */
-  border-radius: 8px; /* Abgerundete Ecken */
-  border: 2px solid #107260; /* Rahmenfarbe */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Weiche Übergänge */
-}
-
-/* End-Bildschirm-Layout */
-#end {
-  display: flex;
-  flex-direction: column; /* Kinder-Elemente untereinander */
-  justify-content: center; /* Zentriert vertikal */
-  align-items: center; /* Zentriert horizontal */
-  height: 100vh; /* Höhe des gesamten Viewports */
-  width: 100vw; /* Breite des gesamten Viewports */
-}
-
-/* Formular-Stil */
-form {
-  width: 100%; /* Formular füllt den Container */
-  display: flex;
-  flex-direction: column; /* Felder untereinander anordnen */
-  align-items: center; /* Zentriert die Felder horizontal */
-}
-
-input {
-  margin-bottom: 1rem; /* Abstand nach unten */
-  width: 20rem; /* Breite des Input-Felds */
-  padding: 1.5rem; /* Innenabstand */
-  font-size: 1.8rem; /* Schriftgröße */
-  border: none; /* Entfernt Rahmen */
-  box-shadow: 0 0.1rem 1.4rem rgb(47, 79, 79); /* Schatten */
-  color: black; /* Schriftfarbe für den eingegebenen Text */
-}
-
-input::placeholder {
-  color: #aaa; /* Platzhalterfarbe */
-}
-
-#end .btn {
-  font-size: 2rem; /* Schriftgröße */
-  padding: 1.5rem; /* Innenabstand */
-  margin: 1rem 0; /* Abstand oben und unten */
-  background-color: white; /* Hintergrundfarbe */
-  color: #107260; /* Textfarbe */
-  border-radius: 8px; /* Abgerundete Ecken */
-  border: 2px solid #107260; /* Rahmenfarbe */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Weiche Übergänge */
+    width: 100vw; /* Nimmt die volle Breite des Viewports ein */
+    height: 100vh; /* Nimmt die volle Höhe des Viewports ein */
+    display: flex; /* Flexbox zum Zentrieren des Inhalts */
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+    align-items: center; /* Zentriert den Inhalt vertikal */
 }
 
 /* Start-Box */
 .start-box {
-  background: rgba(14, 38, 24, 0.25); /* Semi-transparenter Hintergrund */
-  backdrop-filter: blur(5px); /* Unschärfe für den Frosted Glass Effekt */
-  -webkit-backdrop-filter: blur(5px); /* Unterstützung für Safari */
-  border-radius: 10px; /* Abgerundete Ecken */
-  border: 1px solid rgba(255, 255, 255, 0.18); /* Leichter weißer Rand */
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), /* Neon-Effekt */
-  0 0 10px rgba(0, 226, 98, 0.57); /* Optionaler zusätzlicher Glow-Effekt */
-  padding: 30px; /* Innenabstand */
-  margin-top: 20px; /* Abstand nach oben */
-  color: #ffffff; /* Textfarbe */
-  text-align: center; /* Zentrierter Text */
-  max-width: 600px; /* Maximale Breite */
-  width: 100%; /* Nimmt die gesamte Breite ein */
-  display: flex; /* Flexbox für zentrierte Inhalte */
-  flex-direction: column; /* Kinder-Elemente vertikal anordnen */
-  justify-content: center; /* Vertikal zentrieren */
+    background: rgba(14, 38, 24, 0.75); /* Semi-transparenter Hintergrund */
+    backdrop-filter: blur(5px); /* Unschärfe für den Frosted Glass Effekt */
+    -webkit-backdrop-filter: blur(5px); /* Unterstützung für Safari */
+    border-radius: 10px; /* Abgerundete Ecken */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Leichter weißer Rand */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), /* Neon-Effekt */
+                0 0 10px rgba(0, 226, 98, 0.57); /* Optionaler zusätzlicher Glow-Effekt */
+    padding: 30px; /* Innenabstand */
+    margin-top: 20px; /* Abstand nach oben */
+    color: #ffffff; /* Textfarbe */
+    text-align: center; /* Zentrierter Text */
+    max-width: 600px; /* Maximale Breite */
+    width: 100%; /* Nimmt die gesamte Breite ein */
+    display: flex; /* Flexbox für zentrierte Inhalte */
+    flex-direction: column; /* Kinder-Elemente vertikal anordnen */
+    justify-content: center; /* Vertikal zentrieren */
 }
 
-/* Titel-Stil für die Start-Box */
-.start-box h1 {
-  margin: 1rem; /* Entfernt Außenabstände */
-  padding: 1rem; /* Innenabstand für den Titel */
-  font-size: 5.4rem; /* Schriftgröße für h1 */
+/* Typografie */
+h1 {
+    font-size: 5.4rem; /* Schriftgröße für h1 */
 }
 
-/* Progressbar-Container */
-.progress-container {
-  width: 100%; /* Volle Breite */
-  display: flex; /* Flexbox für zentrierte Inhalte */
-  justify-content: center; /* Horizontal zentrieren */
-  align-items: center; /* Vertikal zentrieren */
-  margin-top: 20px; /* Abstand oben */
+/* Buttons */
+.btn {
+    display: block; /* Block-Element für volle Breite */
+    font-size: 2.9rem; /* Schriftgröße */
+    padding: 1rem 0; /* Innenabstand oben und unten */
+    margin: 1rem 0; /* Abstand zwischen Buttons */
+    text-align: center; /* Zentrierter Text */
+    border: 2px solid darkslategray; /* Rahmenfarbe */
+    border-radius: 1.5rem; /* Abgerundete Ecken */
+    background-color: #ffffff; /* Hintergrundfarbe */
+    color: #107260; /* Textfarbe */
+    text-decoration: none; /* Entfernt Unterstreichungen */
+    transition: background-color 0.3s, color 0.3s; /* Weiche Übergänge */
 }
 
-/* Progressbar */
-.progress-bar {
-  width: 90%; /* Breite der Progressbar */
-  max-width: 600px; /* Maximalbreite für große Bildschirme */
-  height: 2rem; /* Höhe der Progressbar */
-  background-color: #ddd; /* Hintergrundfarbe */
-  border-radius: 1rem; /* Abgerundete Ecken */
-  overflow: hidden; /* Überlauf verstecken */
-  position: relative; /* Für das Kind-Element */
+.btn:hover {
+    background-color: #107260; /* Hintergrundfarbe beim Hover */
+    color: #ffffff; /* Textfarbe beim Hover */
 }
 
-.progress-bar span {
-  display: block; /* Block-Element */
-  height: 100%; /* Höhe füllen */
-  background-color: #107260; /* Farbe des Fortschritts */
-  width: 0; /* Startbreite, wird durch JS angepasst */
-  transition: width 0.3s; /* Animation für den Fortschritt */
-}
-
-/* Responsive Anpassungen für h1 */
+/* Responsive Anpassungen */
 @media (max-width: 768px) {
-  .start-box h1 {
-    font-size: 4rem; /* Kleinere Schriftgröße für h1 auf mobilen Geräten */
-  }
+    .start-box h1 {
+        font-size: 4rem; /* Kleinere Schriftgröße für h1 auf mobilen Geräten */
+    }
 
-  .progress-container {
-    margin-top: 15px; /* Weniger Abstand oben auf mobilen Geräten */
-  }
+    .btn {
+        font-size: 2rem; /* Kleinere Schriftgröße für Buttons */
+        padding: 0.8rem; /* Weniger Innenabstand */
+    }
 }
