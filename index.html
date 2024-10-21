@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html class="no-js" lang="de">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startseite</title>
-    <link rel="stylesheet" href="AppStyle.css">
-    <link rel="stylesheet" href="popup.css"> <!-- Popup CSS hinzufügen -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startseite</title>
+  <link rel="stylesheet" href="AppStyle.css">
+  <link rel="stylesheet" href="popup.css"> <!-- Popup CSS hinzufügen -->
 </head>
 <body>
 <div class="container">
-    <div class="start-box">
-        <div id="home" class="flex-center flex-column">
-            <h1>Prüfungsvorbereitung</h1>
-            <a class="btn" href="GAME.html">Play</a>
-            <a class="btn" href="highscores.html">High Scores</a>
-            <a class="btn" href="Category.html">Categories</a>
-            <a class="btn" href="feedback.html">Feedback</a>
-        </div>
+  <div class="start-box">
+    <div id="home" class="flex-center flex-column">
+      <h1>Prüfungsvorbereitung</h1>
+      <a class="btn" href="GAME.html">Play</a>
+      <a class="btn" href="highscores.html">High Scores</a>
+      <a class="btn" href="Category.html">Categories</a>
+      <a class="btn" href="podcast.html">Podcasts</a>
+      <a class="btn" href="feedback.html">Feedback</a>
     </div>
+  </div>
 </div>
 
 <!-- Popup-Fenster -->
 <div id="popup" class="popup hidden">
-    <div class="popup-content">
-        <h3>Willkommen auf deiner Lernplattform für das Examen!</h3>
-        <p>
-            Diese Plattform unterstützt dich bei deiner Vorbereitung auf das Examen mit interaktiven Lerninhalten. 
-            Denke daran: Jeder kleine Fortschritt zählt! Bleib motiviert und gib nicht auf.
-        </p>
-        <p>
-            Gib mir gerne Feedback über den Feedback-Button, damit ich die Plattform weiter verbessern kann. Aktuell konzentrieren sich 
-            die Inhalte auf die medizinischen Fächer der Ergotherapie-Ausbildung.
-        </p>
-        <p>Viel Erfolg und alles Gute auf deinem Weg zum Examen!</p>
-        <button id="popupClose" class="btn">Schließen</button>
-    </div>
+  <div class="popup-content">
+    <h3>Willkommen auf deiner Lernplattform für das Examen!</h3>
+    <p>
+      Diese Plattform unterstützt dich bei deiner Vorbereitung auf das Examen mit interaktiven Lerninhalten.
+      Denke daran: Jeder kleine Fortschritt zählt! Bleib motiviert und gib nicht auf.
+    </p>
+    <p>
+      Gib mir gerne Feedback über den Feedback-Button, damit ich die Plattform weiter verbessern kann. Aktuell konzentrieren sich
+      die Inhalte auf die medizinischen Fächer der Ergotherapie-Ausbildung.
+    </p>
+    <p>Viel Erfolg und alles Gute auf deinem Weg zum Examen!</p>
+    <button id="popupClose" class="btn">Schließen</button>
+  </div>
 </div>
 
 <script>
-    // Popup-Logik
-    const popup = document.getElementById('popup');
-    const closeBtn = document.getElementById('popupClose');
+  // Popup-Logik
+  const popup = document.getElementById('popup');
+  const closeBtn = document.getElementById('popupClose');
 
-    // Popup anzeigen, wenn die Seite geladen wird
-    window.onload = () => {
-        popup.classList.remove('hidden');
-    };
+  // Popup anzeigen, wenn die Seite geladen wird
+  window.onload = () => {
+    popup.classList.remove('hidden');
+  };
 
-    // Popup schließen, wenn auf "Schließen" geklickt wird
-    closeBtn.addEventListener('click', () => {
-        popup.classList.add('hidden');
-    });
+  // Popup schließen, wenn auf "Schließen" geklickt wird
+  closeBtn.addEventListener('click', () => {
+    popup.classList.add('hidden');
+  });
 </script>
 </body>
 </html>
