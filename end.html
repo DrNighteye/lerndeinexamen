@@ -1,53 +1,54 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Super gemacht!</title>
-  <link rel="stylesheet" href="AppStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super gemacht!</title>
+    <link rel="stylesheet" href="AppStyle.css">
 </head>
 <body>
 <div class="container">
-  <div id="end" class="flex-center flex-column">
-    <h1 id="finalScore">Dein Score: <span id="scoreValue"></span></h1> <!-- Zeige den Score an -->
-    <form id="scoreForm" onsubmit="saveHighScore(event)">
-      <input type="text" name="username" id="username" placeholder="Username" required="">
-      <button type="submit" class="btn" id="saveScoreBtn">Save</button>
-    </form>
-    <a class="btn" href="GAME.html">Play Again</a>
-    <a class="btn" href="index.html">Home</a>
-  </div>
+    <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore">Dein Score: <span id="scoreValue"></span></h1> <!-- Zeige den Score an -->
+        <form id="scoreForm" onsubmit="saveHighScore(event)">
+            <input type="text" name="username" id="username" placeholder="Username" required="">
+            <button type="submit" class="btn" id="saveScoreBtn">Save</button>
+            <a class="btn" href="GAME.html">Play Again</a>
+            <a class="btn" href="index.html">Home</a>
+        </form>
+
+    </div>
 </div>
 <script>
-  // Holen des letzten Scores und Anzeigen
-  const finalScore = localStorage.getItem("mostRecentScore"); // Neuen Score abfragen
-  const scoreValue = document.getElementById("scoreValue");
-  scoreValue.innerText = finalScore; // Zeige den Score an
+    // Holen des letzten Scores und Anzeigen
+    const finalScore = localStorage.getItem("mostRecentScore"); // Neuen Score abfragen
+    const scoreValue = document.getElementById("scoreValue");
+    scoreValue.innerText = finalScore; // Zeige den Score an
 
-  // Funktion zum Speichern des Scores
-  function saveHighScore(e) {
-    e.preventDefault(); // Verhindert das Standardverhalten des Formulars
-    const username = document.getElementById("username").value; // Benutzername abrufen
+    // Funktion zum Speichern des Scores
+    function saveHighScore(e) {
+        e.preventDefault(); // Verhindert das Standardverhalten des Formulars
+        const username = document.getElementById("username").value; // Benutzername abrufen
 
-    const score = {
-      score: finalScore, // Speichern des Scores
-      username: username // Speichern des Benutzernamens
-    };
+        const score = {
+            score: finalScore, // Speichern des Scores
+            username: username // Speichern des Benutzernamens
+        };
 
-    // Hochladen der Highscores
-    const highScores = JSON.parse(localStorage.getItem("highScores")) || []; // Aktuelle Highscores abrufen
-    highScores.push(score); // Neuen Score hinzufügen
+        // Hochladen der Highscores
+        const highScores = JSON.parse(localStorage.getItem("highScores")) || []; // Aktuelle Highscores abrufen
+        highScores.push(score); // Neuen Score hinzufügen
 
-    // Sortieren der Highscores absteigend und nur die besten 5 beibehalten
-    highScores.sort((a, b) => b.score - a.score);
-    highScores.splice(5); // Nur die Top 5 beibehalten
+        // Sortieren der Highscores absteigend und nur die besten 5 beibehalten
+        highScores.sort((a, b) => b.score - a.score);
+        highScores.splice(5); // Nur die Top 5 beibehalten
 
-    // Speichern der aktualisierten Highscores in localStorage
-    localStorage.setItem("highScores", JSON.stringify(highScores));
+        // Speichern der aktualisierten Highscores in localStorage
+        localStorage.setItem("highScores", JSON.stringify(highScores));
 
-    // Weiterleitung zur Highscore-Seite
-    window.location.assign("highscores.html");
-  }
+        // Weiterleitung zur Highscore-Seite
+        window.location.assign("highscores.html");
+    }
 </script>
 </body>
 </html>
