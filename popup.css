@@ -12,14 +12,21 @@
     z-index: 1000; /* Über allen anderen Inhalten */
 }
 
-/* Popup-Inhalt */
+/* Popup-Inhalt mit Frosted-Glass-Effekt */
 .popup-content {
-    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.52); /* Halbtransparentes Weiß */
     padding: 2rem;
     border-radius: 1.5rem;
     max-width: 600px;
     text-align: center;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+
+    /* Frosted-Glass-Effekt */
+    backdrop-filter: blur(10px); /* Unschärfe hinter dem Element */
+    -webkit-backdrop-filter: blur(10px); /* Safari-Unterstützung */
+
+    /* Optional: leichter weißer Rand */
+    border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 /* H3-Titel */
