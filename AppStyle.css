@@ -2,8 +2,8 @@
 :root {
     background-color: #042326; /* Hintergrundfarbe für die gesamte Seite */
     font-size: 62.5%; /* Basisgröße für Rem-Einheiten (1rem = 10px) */
-}
 
+}
 /* Setze globale Stile für alle Elemente */
 * {
     box-sizing: border-box; /* Padding und Border werden in die Gesamtgröße einbezogen */
@@ -28,7 +28,7 @@
 
 .container > * {
     width: 100%; /* Die Breite wird automatisch an den Inhalt angepasst */
-}
+
 
 /* Typografie */
 h1, h2, h3, h4 {
@@ -42,9 +42,10 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 5.4rem; /* Schriftgröße für h1 */
+    font-size: 2.4rem; /* Schriftgröße für h1 */
     padding: 0.5rem; /* Leichter Innenabstand */
     text-size-adjust: auto;
+    text-align: center;
 }
 
 h1 > span {
@@ -53,7 +54,7 @@ h1 > span {
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 1.7rem;
     font-weight: 500;
 }
 
@@ -84,6 +85,7 @@ h3 {
 .hidden {
     display: none; /* Element wird ausgeblendet */
 }
+
 
 /* Buttons */
 .btn {
@@ -242,8 +244,11 @@ input::placeholder {
         font-size: 2.4rem; /* Kleinere Schriftgröße für h1 auf mobilen Geräten */
 
     }
+
     .progress-container {
         margin-top: 15px; /* Weniger Abstand oben auf mobilen Geräten */
     }
 
+
+}
 }
