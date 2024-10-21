@@ -1,0 +1,59 @@
+/* Popup-Hintergrund */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Halbtransparentes Schwarz */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Über allen anderen Inhalten */
+}
+
+/* Popup-Inhalt */
+.popup-content {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* H3-Titel */
+.popup-content h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #2f4f4f;
+}
+
+/* Text im Popup */
+.popup-content p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Button zum Schließen */
+.popup-content .btn {
+    margin-top: 1rem;
+    background-color: #107260;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: background-color 0.3s ease;
+}
+
+.popup-content .btn:hover {
+    background-color: #0e5c4e;
+}
+
+/* Popup verstecken */
+.hidden {
+    display: none;
+}
