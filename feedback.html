@@ -1,23 +1,24 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feedback</title>
-  <link rel="stylesheet" href="AppStyle.css">
-  <link rel="stylesheet" href="feedback.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="AppStyle.css">
+    <link rel="stylesheet" href="feedback.css">
 </head>
 <body>
 <div class="container">
-  <div id="feedback" class="flex-center flex-column">
-    <h1>Feedback</h1>
-    <form id="feedbackForm" onsubmit="sendFeedback(event)">
-      <input type="text" id="username" placeholder="Dein Name (optional)">
-      <textarea id="feedbackMessage" placeholder="Dein Feedback" required></textarea>
-      <button type="submit" class="btn">Absenden</button>
-    </form>
-    <a class="btn" href="index.html">Zurück zur Startseite</a>
-  </div>
+    <div id="feedback" class="flex-center flex-column">
+        <h1>Feedback</h1>
+        <form id="feedbackForm" onsubmit="sendFeedback(event)">
+            <input type="text" id="username" placeholder="Dein Name (optional)">
+            <textarea id="feedbackMessage" placeholder="Dein Feedback" required></textarea>
+            <button type="submit" class="btn">Absenden</button>
+            <a class="btn" href="index.html">Home</a>
+        </form>
+
+    </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="feedback.js"></script>
