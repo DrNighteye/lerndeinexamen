@@ -1,136 +1,151 @@
 /* Glaseffekt für Antwort-Container */
 .choice-container {
-  background: rgba(255, 255, 255, 0.15); /* Transparenter weißer Hintergrund */
-  backdrop-filter: blur(8px); /* Blur für leichten Glaseffekt */
-  -webkit-backdrop-filter: blur(8px); /* Safari-Unterstützung */
-  border-radius: 8px; /* Abgerundete Ecken */
-  margin-bottom: 0.5rem;
-  font-size: 1.8rem;
-  transition: transform 150ms, box-shadow 150ms;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Schatten */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Rahmen */
+    background: rgba(255, 255, 255, 0.15); /* Transparenter weißer Hintergrund */
+    backdrop-filter: blur(8px); /* Blur für leichten Glaseffekt */
+    -webkit-backdrop-filter: blur(8px); /* Safari-Unterstützung */
+    border-radius: 8px; /* Abgerundete Ecken */
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    transition: transform 150ms, box-shadow 150ms;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Schatten */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Rahmen */
 }
 .choice-container:hover {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 4px 30px rgb(57, 89, 62); /* Intensiverer Schatten beim Hover */
-  backdrop-filter: blur(8px);
-  cursor: pointer;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 4px 30px rgb(57, 89, 62); /* Intensiverer Schatten beim Hover */
+    backdrop-filter: blur(8px);
+    cursor: pointer;
 }
 
 .choice-prefix {
-  padding: 1.5rem 2.9rem;
-  background-color: darkslategray;
-  color: #ffffff;
+    padding: 1.5rem 2.9rem;
+    background-color: darkslategray;
+    color: #ffffff;
+    text-align: center;
 }
 
 .choice-text {
-  padding: 1.5rem;
-  width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .correct {
-  background-color: #28a745;
+    background-color: #28a745;
 }
 
 .incorrect {
-  background-color: #dc3545;
+    background-color: #dc3545;
 }
 
 /* HUD */
 #hud {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 /* Frage 1/15 */
 .hud-prefix {
-  text-align: center;
-  font-size: 2rem;
+    text-align: center;
+    font-size: 2rem;
 }
 /* Score number */
 .hud-main-text {
-  text-align: center;
-  font-size: 4rem;
+    text-align: center;
+    font-size: 2rem;
 }
 
 /* Progress Bar */
 #progressBar {
-  width: 20rem;
-  height: 4rem;
-  border: 0.3rem solid darkslategray;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  overflow: hidden; /* Verhindert Überlaufen des Inhalts */
-  position: relative;
-  margin-top: 1.5rem;
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid darkslategray;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Verhindert Überlaufen des Inhalts */
+    position: relative;
+    margin-top: 1.5rem;
 }
 
 #progressBarFull {
-  width: 0.001%; /* Startwert */
-  height: 100%; /* Volle Höhe des Containers */
-  background-color: darkslategray;
-  transition: width 0.3s ease; /* Weiche Animation */
+    width: 0.001%; /* Startwert */
+    height: 100%; /* Volle Höhe des Containers */
+    background-color: darkslategray;
+    transition: width 0.3s ease; /* Weiche Animation */
 }
 
 /* Frage-Box */
 .question-box {
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
-  border: 1px;
-  padding: 20px;
-  margin-top: auto;
-  color: white;
-  text-align: center;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    border: 1px;
+    padding: 20px;
+    margin-top: auto;
+    color: white;
+    text-align: center;
 }
 
 /* Restart Button */
 .actions {
-  margin-top: 20px; /* Abstand nach oben */
+    margin-top: 20px; /* Abstand nach oben */
 }
 
 .actions .btn {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(to right, #2f4f4f, #585860);
-  border: none;
-  border-radius: 8px;
-  color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #2f4f4f, #585860);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .actions .btn:hover {
-  background: linear-gradient(to right, #585860, #2f4f4f);
-  transform: translateY(-0.2rem);
+    background: linear-gradient(to right, #585860, #2f4f4f);
+    transform: translateY(-0.2rem);
 }
 
 .actions .btn:active {
-  transform: translateY(0);
+    transform: translateY(0);
 }
+
 .categoryButton {
-  width: 100%; /* Button füllt die gesamte Breite */
-  padding: 12px; /* Innenabstand */
-  background: linear-gradient(to right, #2f4f4f, #585860); /* Gleicher Hintergrund wie andere Buttons */
-  border: none; /* Kein Rahmen */
-  border-radius: 8px; /* Abgerundete Ecken */
-  color: white; /* Textfarbe */
-  font-weight: bold;
-  font-size: 1.5rem; /* Konsistente Schriftgröße */
-  cursor: pointer;
-  margin-top: 20px; /* Abstand nach oben */
-  transition: background 0.3s ease, transform 0.2s ease;
-  text-align: center;
+    width: 100%; /* Button füllt die gesamte Breite */
+    padding: 12px; /* Innenabstand */
+    background: linear-gradient(to right, #2f4f4f, #585860); /* Gleicher Hintergrund wie andere Buttons */
+    border: none; /* Kein Rahmen */
+    border-radius: 8px; /* Abgerundete Ecken */
+    color: white; /* Textfarbe */
+    font-weight: bold;
+    font-size: 1.5rem; /* Konsistente Schriftgröße */
+    cursor: pointer;
+    margin-top: 20px; /* Abstand nach oben */
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center;
 }
 
 .categoryButton:hover {
-  background: linear-gradient(to right, #585860, #2f4f4f); /* Umkehren der Farben beim Hover */
-  transform: translateY(-0.2rem); /* Leichtes Anheben */
+    background: linear-gradient(to right, #585860, #2f4f4f); /* Umkehren der Farben beim Hover */
+    transform: translateY(-0.2rem); /* Leichtes Anheben */
 }
 
 .categoryButton:active {
-  transform: translateY(0); /* Rücksetzen der Position beim Klick */
+    transform: translateY(0); /* Rücksetzen der Position beim Klick */
 }
+@media {
+    .choice-container{
+        box-sizing: border-box;
+        padding: 0.5rem 0.5rem;
+        border-shadow:0 4px 30px rgba(0,0,0,0.1) ;
+    }
+
+}
+
+
+
