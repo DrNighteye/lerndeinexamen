@@ -12,12 +12,11 @@ body {
 
 .category-container {
 
-  background: #042326;
+  background: #1e393c;
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 0 20px rgb(82, 165, 93);
-  color: white;
-  text-shadow:0 0 10px rgb(0, 0, 0);
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  color: #0f1011;
   text-align: center;
   width: 300px; /* Breite der Box */
 }
@@ -27,10 +26,10 @@ body {
   box-shadow: 0 0 10px rgb(0, 0, 0);
   margin: 10px 0;
   padding: 15px;
-  background: #042326;
+  background: #ffffff;
   border: black;
   backdrop-filter: blur(23px);
-  border-radius: 10px;
+  border-radius: 5rem;
   cursor: pointer;
   transition: background 0.3s;
 }
