@@ -5,7 +5,7 @@
     -webkit-backdrop-filter: blur(8px); /* Safari-Unterstützung */
     border-radius: 8px; /* Abgerundete Ecken */
     margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     transition: transform 150ms, box-shadow 150ms;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Schatten */
     border: 1px solid rgba(255, 255, 255, 0.2); /* Rahmen */
@@ -15,6 +15,9 @@
     box-shadow: 0 4px 30px rgb(57, 89, 62); /* Intensiverer Schatten beim Hover */
     backdrop-filter: blur(8px);
     cursor: pointer;
+}
+#question{
+    padding: 5rem;
 }
 
 .choice-prefix {
@@ -146,6 +149,5 @@
     }
 
 }
-
 
 
