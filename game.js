@@ -51,6 +51,8 @@ function getNewQuestion() {
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
+    //beugt wiederholung der Fragen vor. Bei neustart könnten allerdings die gleichen fragen nochmal kommen.
+    availableQuestions.splice(questionIndex, 1);
 
   // Antworten in ein Array umwandeln
   const answerChoices = [
