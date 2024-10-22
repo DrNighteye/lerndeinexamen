@@ -16,6 +16,7 @@
 body{
     background-color: var(--white);
     font-family: "Poppins", sans-serif;
+    z-index: auto;
 }
 a{
     text-decoration: none;
@@ -29,12 +30,13 @@ header{
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 1000; /* Hier den z-index für das Header-Element setzen */
 }
 .logo{
     display: inline-block;
     color: white;
     font-size: 60px;
-    margin-left:10px;
+    margin-left: 10px;
 }
 .nav{
     width: 100%;
@@ -42,6 +44,7 @@ header{
     position: fixed;
     background-color: var(--black);
     overflow: hidden;
+    z-index: 9999; /* Hier eine hohe z-index-Eigenschaft setzen, damit es alles überlagert */
 }
 .menu a {
     display: block;
@@ -64,6 +67,7 @@ menu icons
     cursor: pointer;
     float: right;
     padding: 40px 20px;
+    z-index: 1001; /* sicherstellen, dass der Toggle-Button ebenfalls überlagert */
 }
 /* Style label tag */
 .hamb-line{
@@ -73,8 +77,8 @@ menu icons
     position: relative;
     width: 24px;
 }
-.hamb-line ::before,
-.hamb-line ::after{
+.hamb-line::before,
+.hamb-line::after{
     background: white;
     content: ' ';
     display: block;
@@ -82,7 +86,6 @@ menu icons
     position: absolute;
     transition: all .2s ease-out;
     width: 100%;
-
 }
 .hamb-line::before{
     top: 5px;
@@ -98,8 +101,9 @@ menu icons
 /*
 toggle menu icon
  */
-.side-menu:checked ~nav{
+.side-menu:checked ~ .nav {
     max-height: 100%;
+    z-index: 9999; /* Sicherstellen, dass das Menü beim Aktivieren ganz oben ist */
 }
 .side-menu:checked ~ .hamb .hamb-line{
     background: transparent;
@@ -108,7 +112,6 @@ toggle menu icon
     transform: rotate(-45deg);
     top: 0;
 }
-
 .side-menu:checked ~ .hamb .hamb-line::after{
     transform: rotate(45deg);
     top: 0;
@@ -116,7 +119,7 @@ toggle menu icon
 body:has(.side-menu:checked){
     overflow: hidden;
 }
-/*handyanpassung*/
+/* Anpassung für größere Bildschirme */
 @media (min-width: 768px){
     .nav{
         max-height: none;
@@ -125,6 +128,7 @@ body:has(.side-menu:checked){
         float: right;
         width: fit-content;
         background-color: transparent;
+        z-index: auto; /* z-index aufheben für größere Bildschirme */
     }
     .menu li{
         float: left;
@@ -132,8 +136,6 @@ body:has(.side-menu:checked){
     .menu a:hover{
         background-color: transparent;
         color: var(--gray);
-
-
     }
     .hamb{
         display: none;
