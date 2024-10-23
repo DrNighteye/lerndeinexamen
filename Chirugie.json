@@ -1,0 +1,264 @@
+[
+    {
+      "question": "Welche Fraktur wird durch eine indirekte Gewalteinwirkung beim Sturz auf den ausgestreckten Arm verursacht?",
+      "choice1": "Laterale Klavikulafraktur",
+      "choice2": "Mediale Klavikulafraktur",
+      "choice3": "Mittlere Klavikulafraktur",
+      "choice4": "Distale Klavikulafraktur",
+      "answer": 3,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Was beschreibt das CRPS Typ I?",
+      "choice1": "CRPS mit Nervenläsion",
+      "choice2": "CRPS ohne Läsion eines größeren Nervens",
+      "choice3": "CRPS mit zentraler Nervenschädigung",
+      "choice4": "CRPS mit motorischer Beeinträchtigung",
+      "answer": 2,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Symptome sind typisch für ein primär kaltes CRPS?",
+      "choice1": "Rubor und Tumor",
+      "choice2": "Dolor und Calor",
+      "choice3": "Blasse Hautfarbe und kalte Haut",
+      "choice4": "Starke Schweißbildung",
+      "answer": 3,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Therapie wird bei einer Fraktur mit Gelenkbeteiligung bevorzugt?",
+      "choice1": "Operative Retention",
+      "choice2": "Offene Reposition und Ruhigstellung",
+      "choice3": "Geschlossene Reposition",
+      "choice4": "Konservative Ruhigstellung",
+      "answer": 2,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Komplikation ist typisch bei einer proximalen Humerusfraktur?",
+      "choice1": "Schrumpfung der Rotatorenmanschette",
+      "choice2": "Erhöhtes Risiko für Pneumonie",
+      "choice3": "Druckschmerz über der Achillessehne",
+      "choice4": "Gefahr einer Hüftluxation",
+      "answer": 1,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Behandlungsmethode wird bei der pertrochanteren Femurfraktur oft eingesetzt?",
+      "choice1": "Plattenosteosynthese",
+      "choice2": "Marknagelosteosynthese",
+      "choice3": "Fixateur externe",
+      "choice4": "Dynamische Hüftschraube",
+      "answer": 4,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Form der Osteosynthese verwendet Schrauben zur Stabilisierung der Fraktur?",
+      "choice1": "Zuggurtung",
+      "choice2": "Schraubenosteosynthese",
+      "choice3": "Fixateur externe",
+      "choice4": "Plattenosteosynthese",
+      "answer": 2,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Was ist die häufigste Komplikation bei einer Rippenserienfraktur?",
+      "choice1": "Lungenentzündung",
+      "choice2": "Arthrose",
+      "choice3": "Pseudarthrose",
+      "choice4": "Volkmann-Kontraktur",
+      "answer": 1,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Art der Radiusfraktur wird durch einen Sturz auf die überstreckte Hand verursacht?",
+      "choice1": "Smith-Fraktur",
+      "choice2": "Colles-Fraktur",
+      "choice3": "Monteggia-Fraktur",
+      "choice4": "Galeazzi-Fraktur",
+      "answer": 2,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Methode wird häufig bei der Ruhigstellung von Schultergelenkfrakturen verwendet?",
+      "choice1": "Desault-Verband",
+      "choice2": "Gilchrist-Verband",
+      "choice3": "Schraubenosteosynthese",
+      "choice4": "Fixateur externe",
+      "answer": 2,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Was ist eine typische Ursache für eine proximale Humerusfraktur?",
+      "choice1": "Sturz auf den Ellenbogen",
+      "choice2": "Direkter Schlag auf die Schulter",
+      "choice3": "Sturz auf den gestreckten Arm",
+      "choice4": "Schlag auf den Unterarm",
+      "answer": 3,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Therapieoption wird bei einer instabilen Olekranonfraktur angewendet?",
+      "choice1": "Gilchrist-Verband",
+      "choice2": "Schraubenosteosynthese",
+      "choice3": "Zuggurtungsosteosynthese",
+      "choice4": "Fixateur externe",
+      "answer": 3,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Was ist eine mögliche Komplikation bei der Klavikulafraktur?",
+      "choice1": "Kompression der A. Subclavia",
+      "choice2": "Verletzung des N. medianus",
+      "choice3": "Verletzung der A. axillaris",
+      "choice4": "Gefäßverletzungen am Handgelenk",
+      "answer": 1,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Maßnahme wird bei der Behandlung der Colles-Fraktur bevorzugt?",
+      "choice1": "Ventrale Gipsschiene",
+      "choice2": "Offene Reposition",
+      "choice3": "Dorsale Gipsschiene",
+      "choice4": "Fixateur externe",
+      "answer": 3,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Ursache führt typischerweise zu einer Klavikulafraktur im mittleren Drittel?",
+      "choice1": "Schlag auf die Schulter",
+      "choice2": "Sturz auf den gestreckten Arm",
+      "choice3": "Autounfall",
+      "choice4": "Schlag auf den Unterarm",
+      "answer": 2,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Komplikation kann bei einer Olekranonfraktur auftreten?",
+      "choice1": "Pseudarthrose",
+      "choice2": "Volkmann-Kontraktur",
+      "choice3": "Kallusbildung",
+      "choice4": "Kompression des N. medianus",
+      "answer": 1,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Fraktur wird durch einen Sturz auf den Ellenbogen verursacht?",
+      "choice1": "Olekranonfraktur",
+      "choice2": "Klavikulafraktur",
+      "choice3": "Distale Radiusfraktur",
+      "choice4": "Monteggia-Fraktur",
+      "answer": 1,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Form der Osteosynthese verwendet Drahtschlingen zur Stabilisierung einer Fraktur?",
+      "choice1": "Spickdrahtosteosynthese",
+      "choice2": "Fixateur externe",
+      "choice3": "Zuggurtung",
+      "choice4": "Plattenosteosynthese",
+      "answer": 3,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Symptome sind typisch für CRPS?",
+      "choice1": "Kalte Haut und reduzierte Schweißbildung",
+      "choice2": "Allodynie und Hyperästhesie",
+      "choice3": "Tachykardie und Muskelschwäche",
+      "choice4": "Starke Hitzewallungen",
+      "answer": 2,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Therapie wird bei einer instabilen proximalen Humerusfraktur angewendet?",
+      "choice1": "Fixateur externe",
+      "choice2": "Schraubenosteosynthese",
+      "choice3": "Humeruskopfprothese",
+      "choice4": "Zuggurtungsosteosynthese",
+      "answer": 3,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Komplikation kann nach einer Radiusfraktur auftreten?",
+      "choice1": "Pseudoarthrose",
+      "choice2": "Kompression des N. axillaris",
+      "choice3": "Verletzung der A. brachialis",
+      "choice4": "Kompression der A. subclavia",
+      "answer": 1,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Therapie wird bei einer Colles-Fraktur angewendet, wenn die Achsenknickung >10° beträgt?",
+      "choice1": "Fixateur externe",
+      "choice2": "Dynamische Hüftschraube",
+      "choice3": "Plattenosteosynthese",
+      "choice4": "Gipsschiene",
+      "answer": 3,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Therapie wird bei einem CRPS in der Akutphase eingesetzt?",
+      "choice1": "Kortison",
+      "choice2": "Antibiotika",
+      "choice3": "NSAR",
+      "choice4": "Opioide",
+      "answer": 1,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Fraktur kann bei einer Klavikulafraktur eine häufige Komplikation sein?",
+      "choice1": "Lungenverletzung",
+      "choice2": "Rippenbruch",
+      "choice3": "Skapulafraktur",
+      "choice4": "Beckenfraktur",
+      "answer": 1,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Therapieform wird bei einer distalen Radiusfraktur vom Flexionstyp angewendet?",
+      "choice1": "Ventrale Gipsschiene",
+      "choice2": "Dorsale Gipsschiene",
+      "choice3": "Spickdrahtosteosynthese",
+      "choice4": "Marknagelosteosynthese",
+      "answer": 1,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Gefahr besteht bei einer Olekranonfraktur?",
+      "choice1": "Kompression des N. medianus",
+      "choice2": "Schrumpfung der Rotatorenmanschette",
+      "choice3": "Verletzung des N. ulnaris",
+      "choice4": "Gefahr einer Pneumothorax",
+      "answer": 3,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Frakturform tritt typischerweise durch einen Sturz auf das gebeugte Handgelenk auf?",
+      "choice1": "Monteggia-Fraktur",
+      "choice2": "Smith-Fraktur",
+      "choice3": "Colles-Fraktur",
+      "choice4": "Olekranonfraktur",
+      "answer": 2,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Methode wird zur Fixation einer distalen Radiusfraktur angewendet?",
+      "choice1": "Marknagelosteosynthese",
+      "choice2": "Dynamische Hüftschraube",
+      "choice3": "Plattenosteosynthese",
+      "choice4": "Fixateur externe",
+      "answer": 3,
+      "category": "Chirurgie"
+    },
+    {
+      "question": "Welche Frakturform wird typischerweise bei Rippenserienfrakturen beobachtet?",
+      "choice1": "Fraktur des mittleren Drittels der Klavikula",
+      "choice2": "Multiple Rippenfrakturen auf einer Seite",
+      "choice3": "Fraktur der distalen Tibia",
+      "choice4": "Humerusfraktur",
+      "answer": 2,
+      "category": "Chirurgie"
+    }
+  ]
+}

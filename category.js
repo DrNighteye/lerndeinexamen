@@ -15,8 +15,8 @@ function selectCategory(category) {
     case 'Orthopädie':
       jsonFile = 'Orthopädie.json';
       break;
-    case 'Bewusstseinsstörungen':
-      jsonFile = 'bewusstseinsstoerungen.json';
+    case 'Chirugie':
+      jsonFile = 'Chirugie.json';
       break;
     case 'Neuropsychologische Syndrome':
       jsonFile = 'neuropsychologie.json';
