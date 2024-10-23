@@ -24,7 +24,7 @@
 
 /* Startbox */
 .start-box {
-  max-width: 600px; /* Maximale Breite */
+  max-width: 300px; /* Maximale Breite */
   width: 100%; /* Nimmt die gesamte Breite ein */
   padding: 2rem; /* Innenabstand für die Box */
   background: rgb(30, 57, 60); /* Semi-transparenter Hintergrund */
@@ -35,7 +35,7 @@
 
 /* Typografie */
 h1 {
-  font-size: 4rem; /* Schriftgröße für h1 */
+  font-size: 2rem; /* Schriftgröße für h1 */
 }
 
 /* Buttons */

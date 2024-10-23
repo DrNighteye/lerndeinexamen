@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Registrierungsseite</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<div class="register-container"> <!-- Container für das Registrierungsformular -->
+    <h1>Registrieren</h1> <!-- Überschrift -->
+    <form id="registerForm"> <!-- Formular für die Registrierung -->
+        <div class="input-group"> <!-- Gruppe für Eingabefelder -->
+            <label for="username">Benutzername:</label> <!-- Beschriftung für das Benutzereingabefeld -->
+            <input type="text" id="username" required> <!-- Eingabefeld für den Benutzernamen, erforderlich -->
+        </div>
+        <div class="input-group"> <!-- Gruppe für das Passwortfeld -->
+            <label for="password">Passwort:</label> <!-- Beschriftung für das Passwortfeld -->
+            <input type="password" id="password" required> <!-- Eingabefeld für das Passwort, erforderlich -->
+        </div>
+        <div class="input-group"> <!-- Gruppe für das Bestätigungs-Passwortfeld -->
+            <label for="confirmPassword">Passwort bestätigen:</label> <!-- Beschriftung für das Bestätigungs-Passwortfeld -->
+            <input type="password" id="confirmPassword" required> <!-- Eingabefeld für die Bestätigung des Passworts, erforderlich -->
+        </div>
+        <button type="submit">Registrieren</button> <!-- Registrierungs-Button -->
+        <button type="button" onclick="window.location.href='login.html'">Zurück zum Login</button> <!-- Rückkehr-Button zum Login -->
+        <button type="button" onclick="window.location.href='index.html' ">HOME</button>
+    </form>
+    <p id="message"></p> <!-- Platz für Fehlermeldungen oder Erfolgsmeldungen -->
+</div>
+<script src="register.js"></script> <!-- Verknüpfung zur JavaScript-Datei -->
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif; /* Schriftart für die gesamte Seite */
+    background-color: #042326; /* Hintergrundfarbe der Seite */
+    display: flex; /* Flexbox für zentrierte Ausrichtung */
+    justify-content: center; /* Horizontale Zentrierung */
+    align-items: center; /* Vertikale Zentrierung */
+    height: 100vh; /* Vollständige Höhe des Viewports */
+    margin: 0; /* Entfernen von Standard-Margen */
+}
+
+.register-container {
+    background: white; /* Hintergrundfarbe des Containers */
+    padding: 20px; /* Innenabstand des Containers */
+    border-radius: 5px; /* Abgerundete Ecken */
+    box-shadow: 0 0 10px rgba(255,255,255); /* Schatten für einen 3D-Effekt */
+}
+
+h1 {
+    text-align: center; /* Zentrales Ausrichten der Überschrift */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Abstand zwischen den Eingabefeldern */
+}
+
+label {
+    display: block; /* Beschriftungen nehmen die volle Breite ein */
+    margin-bottom: 5px; /* Abstand unter den Beschriftungen */
+}
+
+input {
+    width: fit-content; /* Eingabefelder nehmen die volle Breite ein */
+    padding: 10px; /* Innenabstand der Eingabefelder */
+    border: 1px solid #ccc; /* Rahmenfarbe der Eingabefelder */
+    border-radius: 4px; /* Abgerundete Ecken für Eingabefelder */
+}
+
+button {
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+    width: 100%;/* Der Button nimmt die volle Breite ein */
+    padding: 10px; /* Innenabstand des Buttons */
+    background-color: #007bff; /* Hintergrundfarbe des Buttons */
+    color: white; /* Textfarbe des Buttons */
+    border: none; /* Kein Rahmen */
+    border-radius: 4px; /* Abgerundete Ecken für den Button */
+    cursor: pointer; /* Cursor zeigt an, dass der Button klickbar ist */
+}
+
+button:hover {
+    background-color: #0056b3; /* Dunklere Farbe beim Hover-Effekt */
+}
+
+#message {
+    margin-top: 10px; /* Abstand über der Meldung */
+    text-align: center; /* Zentrales Ausrichten der Meldung */
+}
