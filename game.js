@@ -12,22 +12,56 @@ let availableQuestions = [];
 
 // Fragen-Array
 let questions = [];
-
-// JSON-Datei aus dem localStorage laden
-const jsonFile = localStorage.getItem('selectedJsonFile');
-
-// JSON-Datei laden und das Spiel starten
-fetch(jsonFile)
-  .then(res => res.json())
-  .then(loadedQuestions => {
-    questions = loadedQuestions;
-    startGame();
-  })
-  .catch(error => console.error("Fehler beim Laden der JSON-Datei:", error));
+let jsonFiles = ["chirugie.json", "neurologieTeil2.json", "Orthopädie.json", "neurologieTeil3.json", "questions.json"];
 
 // Konstanten
 const Correct_Bonus = 5;
-const Max_Questions = 15;
+let Max_Questions = 15; // Standardmäßig auf 15 für Classic-Modus
+
+// Spielmodus aus localStorage laden
+let gameMode = localStorage.getItem('selectedGameMode');
+
+// Spielmodi-Konfiguration basierend auf dem ausgewählten Modus
+switch (gameMode) {
+  case "classic":
+    Max_Questions = 15; // Classic-Modus mit maximal 15 Fragen
+    break;
+  case "challenger":
+    Max_Questions = 10;// Herausforderungsmodus mit 10 Fragen, als Beispiel
+    break;
+  case "endless":
+    Max_Questions = Infinity; // Endlosmodus: keine Begrenzung
+    break;
+  case "querbeet":
+    Max_Questions = 20; // Querbeet-Modus mit gemischten Kategorien, hier als Beispiel 20 Fragen
+    break;
+  default:
+    Max_Questions = 15; // Standardwert falls kein Modus gewählt wurde
+}
+
+// JSON-Dateien laden und das Spiel starten
+function loadQuestions() {
+  if (gameMode === "endless" || gameMode === "querbeet") {
+    // Für den Endless- oder Querbeet-Modus alle JSON-Dateien laden
+    Promise.all(jsonFiles.map(file => fetch(file).then(res => res.json())))
+        .then(loadedQuestionsArrays => {
+          // Alle Fragen aus den verschiedenen Dateien kombinieren
+          questions = loadedQuestionsArrays.flat();
+          startGame(); // Start des Spiels nach dem Laden der Fragen
+        })
+        .catch(error => console.error("Fehler beim Laden der JSON-Dateien:", error));
+  } else {
+    // Falls ein anderer Modus nur eine Datei benötigt, hier Anpassungen vornehmen
+    const jsonFile = localStorage.getItem('selectedJsonFile');
+    fetch(jsonFile)
+        .then(res => res.json())
+        .then(loadedQuestions => {
+          questions = loadedQuestions;
+          startGame();
+        })
+        .catch(error => console.error("Fehler beim Laden der JSON-Datei:", error));
+  }
+}
 
 // Spiel starten
 function startGame() {
@@ -39,20 +73,18 @@ function startGame() {
 
 // Zufällige Frage holen
 function getNewQuestion() {
-  if (questionCounter >= Max_Questions || availableQuestions.length === 0) {
+  if ((questionCounter >= Max_Questions && gameMode !== "endless") || availableQuestions.length === 0) {
     localStorage.setItem('mostRecentScore', score);
     return window.location.assign("end.html"); // Spielende
   }
 
   questionCounter++;
-  progressText.innerText = `Frage ${questionCounter}/${Max_Questions}`; // Frage anzeigen
+  progressText.innerText = `Frage ${questionCounter}/${gameMode === "endless" ? "∞" : Max_Questions}`; // Frage anzeigen
 
   // Zufällige Frage auswählen
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
-    //beugt wiederholung der Fragen vor. Bei neustart könnten allerdings die gleichen fragen nochmal kommen.
-    availableQuestions.splice(questionIndex, 1);
 
   // Antworten in ein Array umwandeln
   const answerChoices = [
@@ -61,9 +93,6 @@ function getNewQuestion() {
     currentQuestion.choice3,
     currentQuestion.choice4
   ];
-
-  // Füge die korrekte Antwort auch zum Antwort-Array hinzu
-  const correctAnswerIndex = currentQuestion.answer; // Korrekter Index
 
   // Mische die Antworten
   shuffle(answerChoices);
@@ -74,7 +103,7 @@ function getNewQuestion() {
     choice.dataset.number = index + 1; // Aktualisiere den Daten-Index
 
     // Setze das korrekte Attribut für die richtige Antwort
-    if (answerChoices[index] === currentQuestion[`choice${correctAnswerIndex}`]) {
+    if (answerChoices[index] === currentQuestion[`choice${currentQuestion.answer}`]) {
       choice.dataset.correct = "true"; // Setze korrektes Attribut
     } else {
       choice.dataset.correct = "false"; // Setze falsches Attribut
@@ -84,7 +113,8 @@ function getNewQuestion() {
     choice.classList.remove("correct", "incorrect");
   });
 
-  availableQuestions.splice(questionIndex, 1); // Frage aus Pool entfernen
+  // Frage aus Pool entfernen, um Wiederholung zu vermeiden
+  availableQuestions.splice(questionIndex, 1);
   acceptingAnswer = true;
 }
 
@@ -124,7 +154,6 @@ choices.forEach(choice => {
 
     // Zeige das Feedback und gehe nach einer Sekunde zur nächsten Frage
     setTimeout(() => {
-      // Entferne die Klassen nach 1 Sekunde
       selectedChoice.parentElement.classList.remove(classToApply);
       choices.forEach(choice => {
         choice.classList.remove("correct", "incorrect"); // Entferne alle Klassen von den Antwortmöglichkeiten
@@ -149,3 +178,6 @@ document.getElementById("categoryButton").addEventListener("click", () => {
 document.getElementById("homeButton").addEventListener("click", () => {
   window.location.href = "index.html";
 });
+
+// Fragen laden und das Spiel starten
+loadQuestions();

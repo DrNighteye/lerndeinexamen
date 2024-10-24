@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS-Dateien -->
+    <link rel="stylesheet" href="AppStyle.css">
+
+    <title>Gamemode Auswahl</title>
+</head>
+<body>
+<div class="container">
+    <div class="start-box">
+        <div id="home" class="flex-center flex-column">
+            <h1>Gamemode</h1>
+            <!-- Spielmodus speichern und zur Spielseite weiterleiten -->
+            <a class="btn" href="GAME.html" onclick="setGameMode('classic')">Classic</a>
+            <a class="btn" href="GAME.html" onclick="setGameMode('challenger')">Challenger</a>
+            <a class="btn" href="GAME.html" onclick="setGameMode('endless')">Endless</a>
+            <a class="btn" href="GAME.html" onclick="setGameMode('querbeet')">Querbeet</a>
+            <a class="btn" href="index.html">HOME</a>
+            <a class="btn" href="podcast.html">Podcast</a>
+            <a class="btn" href="feedback.html">Feedback</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Funktion, um den Spielmodus in localStorage zu speichern
+    function setGameMode(mode) {
+        localStorage.setItem('selectedGameMode', mode);
+    }
+</script>
+
+</body>
+</html>
