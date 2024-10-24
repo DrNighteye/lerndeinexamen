@@ -61,7 +61,7 @@ h1 {
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
   h1 {
-    font-size: 3rem; /* Kleinere Schriftgröße für h1 auf mobilen Geräten */
+    font-size: 2rem; /* Kleinere Schriftgröße für h1 auf mobilen Geräten */
   }
 
   .btn {
