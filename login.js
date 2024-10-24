@@ -1,19 +1,23 @@
-// Event-Listener für das Absenden des Formulars
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Verhindert das Standardverhalten des Formulars (Seitenreload)
+// Funktion, um den Benutzer über Firebase einzuloggen
+function loginUser() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
-    // Benutzereingaben abrufen
-    const username = document.getElementById('username').value; // Wert des Benutzernamens
-    const password = document.getElementById('password').value; // Wert des Passworts
-    const message = document.getElementById('message'); // Referenz zum Meldungsabschnitt
-
-    // Überprüfen der Anmeldedaten
-    // Hier kannst du die Logik anpassen (z.B. an einen Server senden)
-    if (username === "admin" && password === "passwort") {
-        message.textContent = "Erfolgreich angemeldet!"; // Erfolgsnachricht
-        message.style.color = "green"; // Textfarbe für Erfolgsnachricht
-    } else {
-        message.textContent = "Ungültiger Benutzername oder Passwort!"; // Fehlermeldung
-        message.style.color = "red"; // Textfarbe für Fehlermeldung
-    }
-});
+    // Firebase-Authentifizierung verwenden
+    signInWithEmailAndPassword(auth, email, password)
+        .then(userCredential => {
+            // Erfolgreich eingeloggt
+            const user = userCredential.user;
+            console.log('Benutzer eingeloggt:', user);
+            document.getElementById('message').innerText = "Erfolgreich eingeloggt!";
+            // Optional: Weiterleitung zu einer anderen Seite
+            window.location.href = 'index.html';
+        })
+        .catch(error => {
+            // Fehler beim Einloggen
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.error('Fehler beim Login:', errorMessage);
+            document.getElementById('message').innerText = "Fehler: " + errorMessage;
+        });
+}

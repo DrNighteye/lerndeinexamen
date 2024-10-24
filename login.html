@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8"> <!-- Zeichencodierung auf UTF-8 setzen -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsives Design -->
-    <link rel="stylesheet" href="login.css"> <!-- Verknüpfung zur CSS-Datei -->
-    <title>Login-Seite</title> <!-- Titel der Seite -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login-Seite</title>
 </head>
 <body>
 
-<div class="login-container"> <!-- Container für das Login-Formular -->
-    <h1>Login</h1> <!-- Überschrift -->
-    <form id="loginForm"> <!-- Formular für die Anmeldung -->
-        <div class="input-group"> <!-- Gruppe für Eingabefelder -->
-            <label for="username">Benutzername:</label> <!-- Beschriftung für das Benutzereingabefeld -->
-            <input type="text" id="username" required> <!-- Eingabefeld für den Benutzernamen, erforderlich -->
+<div class="login-container">
+    <h1>Login</h1>
+    <form id="loginForm">
+        <div class="input-group">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" required>
         </div>
-        <div class="input-group"> <!-- Gruppe für das Passwortfeld -->
-            <label for="password">Passwort:</label> <!-- Beschriftung für das Passwortfeld -->
-            <input type="password" id="password" required> <!-- Eingabefeld für das Passwort, erforderlich -->
+        <div class="input-group">
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" required>
         </div>
-        <button type="submit">Anmelden</button> <!-- Anmelde-Button -->
-        <button type="button" onclick="window.location.href='register.html'">Registrieren</button> <!-- Weiterleitungs-Button -->
+        <button type="submit">Anmelden</button>
+        <button type="button" onclick="window.location.href='register.html'">Registrieren</button>
         <button type="button" onclick="window.location.href='index.html' ">HOME</button>
     </form>
-    <p id="message"></p> <!-- Platz für Fehlermeldungen oder Erfolgsmeldungen -->
+    <p id="message"></p>
 </div>
-<script src="login.js"></script> <!-- Verknüpfung zur JavaScript-Datei -->
+
+<script type="module">
+    import { loginUser, getUserData } from './firebase.js';
+
+    document.getElementById('loginForm').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        loginUser(email, password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                console.log('Login erfolgreich:', user);
+                window.location.href='index.html';
+
+                getUserData(user.uid).then(userData => {
+                    console.log('Benutzerdaten:', userData);
+                });
+
+                document.getElementById('message').innerText = 'Login erfolgreich!';
+            })
+            .catch((error) => {
+                document.getElementById('message').innerText = 'Fehler: ' + error.message;
+            });
+    });
+</script>
 </body>
 </html>
