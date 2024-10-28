@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html class="no-js" lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Startseite</title>
-  <link rel="stylesheet" href="AppStyle.css">
-  <link rel="stylesheet" href="popup.css"><!-- Popup CSS hinzufügen -->
-  <link rel="stylesheet" href="navbar.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite</title>
+    <link rel="stylesheet" href="AppStyle.css">
+    <link rel="stylesheet" href="popup.css"><!-- Popup CSS hinzufügen -->
+    <link rel="stylesheet" href="navbar.css">
     <link rel="icon" href="ExaGo.png">
+    <style>
+        /* Body Flexbox */
+        body {
+            display: block; /* Flexbox aktivieren */
+            flex-direction: column; /* Elemente untereinander anordnen */
+            align-items: center; /* Zentriert Elemente horizontal */
+            justify-content: center; /* Zentriert Elemente vertikal */
+            min-height: 100vh; /* Mindestens die volle Höhe des Viewports */
+            margin: 0; /* Kein Standardmargin */
+            font-family: Arial, sans-serif; /* Schriftart */
+        }
+
+        /* Hier CSS für Boxen und Container hinzufügen */
+        .box-container {
+            display: flex; /* Flexbox aktivieren */
+            justify-content: space-around; /* Platz zwischen den Boxen */
+            width: 100%; /* Vollständige Breite */
+            margin: 20px 0; /* Abstand über und unter der Box-Container */
+        }
+
+        .info-box {
+            background-color: #161a2d; /* Hintergrundfarbe */
+            padding: 20px; /* Innenabstand */
+            width: 30%; /* Breite der Boxen */
+            text-align: center; /* Text zentrieren */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: white; /* Textfarbe */
+        }
+
+        /* Neue CSS-Regeln für die Startbox */
+        .start-box {
+            display: flex; /* Flexbox aktivieren */
+            justify-content: center; /* Horizontale Zentrierung */
+            align-items: center; /* Vertikale Zentrierung */
+            margin: 0 auto; /* Automatischer Abstand, um sie mittig zu halten */
+        }
+
+        #home {
+            text-align: center; /* Text in der Startbox zentrieren */
+            background-color: #161a2d; /* Hintergrundfarbe der Startbox */
+            padding: 20px; /* Innenabstand */
+            border-radius: 10px; /* Abgerundete Ecken */
+            box-sizing: content-box;
+            width: 300px; /* Feste Breite für die Startbox */
+        }
+    </style>
 </head>
 <body>
-  <!-- Navigation bar -->
+<!-- Navigation bar -->
 <header class="header">
     <!-- Logo -->
     <a href="ExaGo.png" class="logo">Examen</a>
@@ -24,58 +70,90 @@
             <li><a href="Category.html">Category</a> </li>
             <li><a href="podcast.html">PODCAST</a></li>
             <li><a href="feedback.html">FEEDBACK</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-            <li><a href="register.html">REGISTER</a></li>
+           <!-- <li><a href="login.html">LOGIN</a></li>-->
+            <!--<li><a href="register.html">REGISTER</a></li>-->
         </ul>
     </nav>
 </header>
-<div class="container">
-  <div class="start-box">
-    <div id="home" class="flex-center flex-column">
-      <h1>Prüfungsvorbereitung</h1>
-      <a class="btn" href="GAME.html">Play</a>
-        <a class="btn" href="gamemode.html">Gamemode</a>
-      <a class="btn" href="highscores.html">High Scores</a>
-      <a class="btn" href="Category.html">Categories</a>
-      <a class="btn" href="podcast.html">Podcasts</a>
-      <a class="btn" href="feedback.html">Feedback</a>
-        <a class="btn" href="login.html">LOGIN</a>
-        <a class="btn" href="register.html">REGISTIEREN</a>
-    </div>
-  </div>
+
+<div class="box-container" id="factContainer">
+    <!-- Boxen werden hier dynamisch hinzugefügt -->
 </div>
 
-<!-- Popup-Fenster -->
+<div class="start-box">
+    <div id="home" class="flex-center flex-column">
+        <h1>Prüfungsvorbereitung</h1>
+        <a class="btn" href="GAME.html">Play</a>
+        <a class="btn" href="gamemode.html">Gamemode</a>
+        <a class="btn" href="highscores.html">High Scores</a>
+        <a class="btn" href="Category.html">Categories</a>
+        <a class="btn" href="podcast.html">Podcasts</a>
+        <a class="btn" href="feedback.html">Feedback</a>
+        <!-- <a class="btn" href="login.html">LOGIN</a>-->
+        <!-- <a class="btn" href="register.html">REGISTIEREN</a>-->
+     </div>
+ </div>
+
+ <!-- Popup-Fenster -->
 <div id="popup" class="popup hidden">
-  <div class="popup-content">
-    <h3>Willkommen auf deiner Lernplattform für das Examen!</h3>
-    <p>
-      Diese Plattform unterstützt dich bei deiner Vorbereitung auf das Examen mit interaktiven Lerninhalten.
-      Denke daran: Jeder kleine Fortschritt zählt! Bleib motiviert und gib nicht auf.
-    </p>
-    <p>
-      Gib mir gerne Feedback über den Feedback-Button, damit ich die Plattform weiter verbessern kann. Aktuell konzentrieren sich
-      die Inhalte auf die medizinischen Fächer der Ergotherapie-Ausbildung.
-    </p>
-    <p>Viel Erfolg und alles Gute auf deinem Weg zum Examen!</p>
-    <button id="popupClose" class="btn">Schließen</button>
-  </div>
+    <div class="popup-content">
+        <h3>Willkommen auf deiner Lernplattform für das Examen!</h3>
+        <p>
+            Diese Plattform unterstützt dich bei deiner Vorbereitung auf das Examen mit interaktiven Lerninhalten.
+            Denke daran: Jeder kleine Fortschritt zählt! Bleib motiviert und gib nicht auf.
+        </p>
+        <p>
+            Gib mir gerne Feedback über den Feedback-Button, damit ich die Plattform weiter verbessern kann. Aktuell konzentrieren sich
+            die Inhalte auf die medizinischen Fächer der Ergotherapie-Ausbildung.
+        </p>
+        <p>Viel Erfolg und alles Gute auf deinem Weg zum Examen!</p>
+        <button id="popupClose" class="btn">Schließen</button>
+    </div>
 </div>
 
 <script>
-  // Popup-Logik
-  const popup = document.getElementById('popup');
-  const closeBtn = document.getElementById('popupClose');
+    // Funktion, um zufällige Fakten aus der JSON-Datei zu laden und in die Boxen einzufügen
+    async function loadFacts() {
+        try {
+            const response = await fetch('facts.json'); // JSON-Datei abrufen
+            const facts = await response.json(); // JSON-Daten parsen
 
-  // Popup anzeigen, wenn die Seite geladen wird
-  window.onload = () => {
-    popup.classList.remove('hidden');
-  };
+            // Zufällige Fakten auswählen, ohne sie doppelt anzuzeigen
+            const randomFacts = getRandomFacts(facts, 3); // Wähle 3 zufällige Fakten
 
-  // Popup schließen, wenn auf "Schließen" geklickt wird
-  closeBtn.addEventListener('click', () => {
-    popup.classList.add('hidden');
-  });
+            // Die Fakten in die Info-Boxen einfügen
+            const factContainer = document.getElementById('factContainer');
+            factContainer.innerHTML = ''; // Vorherige Inhalte löschen, um Duplikate zu vermeiden
+            randomFacts.forEach(item => {
+                const infoBox = document.createElement('div');
+                infoBox.classList.add('info-box');
+                infoBox.textContent = item.fact; // Fakt in die Info-Box einfügen
+                factContainer.appendChild(infoBox); // Box zum Container hinzufügen
+            });
+        } catch (error) {
+            console.error('Fehler beim Laden der Fakten:', error);
+        }
+    }
+
+    // Funktion, um eine bestimmte Anzahl zufälliger Fakten auszuwählen
+    function getRandomFacts(array, count) {
+        const shuffled = array.sort(() => 0.5 - Math.random()); // Array zufällig mischen
+        return shuffled.slice(0, count); // Die ersten "count" Elemente zurückgeben
+    }
+
+    // Popup-Logik
+    const popup = document.getElementById('popup');
+    const closeBtn = document.getElementById('popupClose');
+
+    window.onload = () => {
+        loadFacts(); // Fakten laden, wenn die Seite geladen wird
+        popup.classList.remove('hidden'); // Popup anzeigen
+    };
+
+    // Popup schließen, wenn auf "Schließen" geklickt wird
+    closeBtn.addEventListener('click', () => {
+        popup.classList.add('hidden');
+    });
 </script>
 </body>
 </html>

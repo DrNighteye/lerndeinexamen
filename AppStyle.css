@@ -1,8 +1,12 @@
 /* Globale Einstellungen */
 :root {
-  background-color: #042326; /* Hintergrundfarbe für die gesamte Seite */
+  background-color: #161a2d; /* Hintergrundfarbe für die gesamte Seite */
   font-size: 62.5%; /* Basisgröße für Rem-Einheiten (1rem = 10px) */
+  --white: #161a2d;
+  --black: #161a2d;
+  --gray: #161a2d;
 }
+
 
 /* Setze globale Stile für alle Elemente */
 * {
@@ -21,13 +25,37 @@
   justify-content: center; /* Zentriert den Inhalt horizontal */
   align-items: center; /* Zentriert den Inhalt vertikal */
 }
+.box-container {
+  display: flex; /* Flexbox für die Anordnung der Boxen */
+  justify-content: space-between; /* Platz zwischen den Boxen */
+  margin: 20px 0; /* Abstand nach oben und unten */
+}
+
+.box {
+  background-color: #f0f0f0; /* Hintergrundfarbe */
+  border: 1px solid #ccc; /* Rahmen */
+  border-radius: 5px; /* Abgerundete Ecken */
+  padding: 20px; /* Innenabstand */
+  width: 30%; /* Breite der Boxen */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten */
+}
+
+/* Optional: Text zentrieren */
+.box h2 {
+  text-align: center; /* Überschrift zentrieren */
+}
+
+.box p {
+  text-align: justify; /* Text ausrichten */
+}
+
 
 /* Startbox */
 .start-box {
   max-width: 300px; /* Maximale Breite */
   width: 100%; /* Nimmt die gesamte Breite ein */
   padding: 2rem; /* Innenabstand für die Box */
-  background: rgb(30, 57, 60); /* Semi-transparenter Hintergrund */
+  background: rgb(22, 26, 45); /* Semi-transparenter Hintergrund */
   border-radius: 2rem; /* Abgerundete Ecken */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten für die Box */
   text-align: center; /* Zentrierter Text */
@@ -45,17 +73,17 @@ h1 {
   padding: 1rem; /* Innenabstand */
   margin: 1rem 0; /* Abstand zwischen Buttons */
   text-align: center; /* Zentrierter Text */
-  border: 2px solid darkslategray; /* Rahmenfarbe */
+  border: 2px solid #0f1011; /* Rahmenfarbe */
   border-radius: 5rem; /* Abgerundete Ecken */
-  background-color: #ffffff; /* Hintergrundfarbe */
-  color: #107260; /* Textfarbe */
+  background-color: #bf6860; /* Hintergrundfarbe */
+  color: #0f1011; /* Textfarbe */
   text-decoration: none; /* Entfernt Unterstreichungen */
   transition: background-color 0.3s, color 0.3s; /* Weiche Übergänge */
 }
 
 .btn:hover {
-  background-color: #107260; /* Hintergrundfarbe beim Hover */
-  color: #ffffff; /* Textfarbe beim Hover */
+  background-color: #fdfdfd; /* Hintergrundfarbe beim Hover */
+  color: #be675f; /* Textfarbe beim Hover */
 }
 
 /* Responsive Anpassungen */

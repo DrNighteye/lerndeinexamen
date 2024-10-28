@@ -1,6 +1,6 @@
 /* Glaseffekt für Antwort-Container */
 .choice-container {
-    background: rgba(255, 255, 255, 0.15); /* Transparenter weißer Hintergrund */
+    background: rgb(0, 123, 113); /* Transparenter weißer Hintergrund */
     backdrop-filter: blur(8px); /* Blur für leichten Glaseffekt */
     -webkit-backdrop-filter: blur(8px); /* Safari-Unterstützung */
     border-radius: 8px; /* Abgerundete Ecken */
@@ -8,11 +8,11 @@
     font-size: 1.5rem;
     transition: transform 150ms, box-shadow 150ms;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Schatten */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Rahmen */
+    border: 1px solid rgb(0, 168, 156); /* Rahmen */
 }
 .choice-container:hover {
     transform: translateY(-0.1rem);
-    box-shadow: 0 4px 30px rgb(57, 89, 62); /* Intensiverer Schatten beim Hover */
+    box-shadow: 0 4px 30px rgb(191, 104, 96); /* Intensiverer Schatten beim Hover */
     backdrop-filter: blur(8px);
     cursor: pointer;
 }
@@ -22,7 +22,7 @@
 
 .choice-prefix {
     padding: 1.5rem 2.9rem;
-    background-color: darkslategray;
+    background-color: #be675f;
     color: #ffffff;
     text-align: center;
 }
@@ -99,7 +99,7 @@
 .actions .btn {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(to right, #2f4f4f, #585860);
+    background: #bd665e;
     border: none;
     border-radius: 8px;
     color: white;
@@ -121,10 +121,10 @@
 .categoryButton {
     width: 100%; /* Button füllt die gesamte Breite */
     padding: 12px; /* Innenabstand */
-    background: linear-gradient(to right, #2f4f4f, #585860); /* Gleicher Hintergrund wie andere Buttons */
+    background: #be675f; /* Gleicher Hintergrund wie andere Buttons */
     border: none; /* Kein Rahmen */
     border-radius: 8px; /* Abgerundete Ecken */
-    color: white; /* Textfarbe */
+    color: #1e1f22; /* Textfarbe */
     font-weight: bold;
     font-size: 1.5rem; /* Konsistente Schriftgröße */
     cursor: pointer;
@@ -145,6 +145,7 @@
     .choice-container{
         box-sizing: border-box;
         padding: 0.5rem 0.5rem;
+        display: flex;
         border-shadow:0 4px 30px rgba(0,0,0,0.1) ;
     }
 

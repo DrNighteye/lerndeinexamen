@@ -9,6 +9,8 @@ let acceptingAnswer = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+let wrongAnswers = 0; // Zählt die falschen Antworten
+
 
 // Fragen-Array
 let questions = [];
@@ -16,7 +18,7 @@ let jsonFiles = ["chirugie.json", "neurologieTeil2.json", "Orthopädie.json", "n
 
 // Konstanten
 const Correct_Bonus = 5;
-let Max_Questions = 15; // Standardmäßig auf 15 für Classic-Modus
+let Max_Questions = 20; // Standardmäßig auf 15 für Classic-Modus
 
 // Spielmodus aus localStorage laden
 let gameMode = localStorage.getItem('selectedGameMode');
@@ -24,13 +26,16 @@ let gameMode = localStorage.getItem('selectedGameMode');
 // Spielmodi-Konfiguration basierend auf dem ausgewählten Modus
 switch (gameMode) {
   case "classic":
-    Max_Questions = 15; // Classic-Modus mit maximal 15 Fragen
+    Max_Questions = 15;
+    Max_Wrong_Answers = 5;// Classic-Modus mit maximal 15 Fragen
     break;
   case "challenger":
-    Max_Questions = 10;// Herausforderungsmodus mit 10 Fragen, als Beispiel
+    Max_Questions = 50;// Herausforderungsmodus mit 10 Fragen, als Beispiel
+    Max_Wrong_Answers = 3;
     break;
   case "endless":
-    Max_Questions = Infinity; // Endlosmodus: keine Begrenzung
+    Max_Questions = Infinity;// Endlosmodus: keine Begrenzung
+    Max_Wrong_Answers = Infinity;
     break;
   case "querbeet":
     Max_Questions = 20; // Querbeet-Modus mit gemischten Kategorien, hier als Beispiel 20 Fragen
@@ -67,6 +72,7 @@ function loadQuestions() {
 function startGame() {
   questionCounter = 0;
   score = 0;
+  wrongAnswers = 0;
   availableQuestions = [...questions]; // Kopiere das Fragen-Array
   getNewQuestion();
 }
@@ -126,7 +132,6 @@ function shuffle(array) {
   }
 }
 
-// Eventlistener für die Antwort-Buttons
 choices.forEach(choice => {
   choice.addEventListener("click", e => {
     if (!acceptingAnswer) return;
@@ -139,13 +144,21 @@ choices.forEach(choice => {
     const isCorrect = selectedChoice.dataset.correct === "true";
     const classToApply = isCorrect ? "correct" : "incorrect";
 
-    // Wenn die Antwort falsch ist, zeige die richtige Antwort
     if (!isCorrect) {
+      wrongAnswers++; // Zählt die Fehlversuche
+
+      // Wenn die Antwort falsch ist, zeige die richtige Antwort
       const correctChoice = choices.find(choice => choice.dataset.correct === "true");
       correctChoice.classList.add("correct"); // Markiere die richtige Antwort
+
+      // Überprüfe, ob 3 falsche Antworten gegeben wurden
+      if (gameMode === "challenger" && wrongAnswers >= 3) {
+        localStorage.setItem('mostRecentScore', score);
+        return window.location.assign("end.html"); // Spielende bei 3 Fehlern im Herausforderungsmodus
+      }
     }
 
-    selectedChoice.parentElement.classList.add(classToApply); // Markiere die gewählte Antwort
+    selectedChoice.parentElement.classList.add(classToApply);
 
     // Score erhöhen, wenn die Antwort korrekt ist
     if (isCorrect) {

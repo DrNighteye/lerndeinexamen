@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
 
 :root{
-    --white: #042326;
-    --black: #36383F;
-    --gray: #85888C;
+    --white: #161a2d;
+    --black: #161a2d;
+    --gray: #161a2d;
 } /* variables*/
 
 /* Reset */
@@ -20,6 +20,8 @@ body{
 }
 a{
     text-decoration: none;
+    font-size: 18px;
+    text-align: center;
 }
 ul{
     list-style: none;
