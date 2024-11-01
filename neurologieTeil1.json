@@ -1,0 +1,281 @@
+[
+  {
+    "question": "Welche Tests gehören zum taktilen System?",
+    "choice1": "Büroklammertest (2-Punkt-Diskrimination)",
+    "choice2": "Fahrradfahren auf unebenem Gelände",
+    "choice3": "Spiegeln von Körperhaltungen",
+    "choice4": "Hören von Geräuschen bei Ablenkung",
+    "answer": 1,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Wie wird die selektive Aufmerksamkeit getestet?",
+    "choice1": "Sortieren von Münzen nach Größe",
+    "choice2": "Radio anlassen und Aufgabe bearbeiten",
+    "choice3": "Riechtest mit verschiedenen Düften",
+    "choice4": "Gewichte ohne Sichtkontakt zuordnen",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Was ist typisch für einen visuellen Neglect?",
+    "choice1": "Unfähigkeit, Geräusche zu hören",
+    "choice2": "Nicht erkennen, dass es Abend ist",
+    "choice3": "Vernachlässigung einer Raumhälfte",
+    "choice4": "Schwierigkeit beim Planen von Handlungen",
+    "answer": 3,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Was beschreibt das episodische Gedächtnis?",
+    "choice1": "Erinnerungen an persönliche Ereignisse",
+    "choice2": "Wissen über Fakten und Begriffe",
+    "choice3": "Fähigkeit zur Problemlösung",
+    "choice4": "Unbewusste motorische Abläufe",
+    "answer": 1,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Was zeichnet die EEG-Untersuchung auf?",
+    "choice1": "Herzrhythmus",
+    "choice2": "Muskelkontraktionen",
+    "choice3": "Hirnströme",
+    "choice4": "Nervenleitgeschwindigkeit",
+    "answer": 3,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welches Verfahren verwendet Magnetfelder anstelle von Röntgenstrahlen?",
+    "choice1": "CT",
+    "choice2": "MRT",
+    "choice3": "Dopplersonographie",
+    "choice4": "ENG",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Wo wird eine Lumbalpunktion durchgeführt?",
+    "choice1": "Zwischen HWK 1 und HWK 2",
+    "choice2": "Zwischen LWK 3 und LWK 4",
+    "choice3": "Zwischen BWS 5 und BWS 6",
+    "choice4": "Am Steißbein",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Wie nennt man eine unvollständige Lähmung einer Körperhälfte?",
+    "choice1": "Monoplegie",
+    "choice2": "Paraplegie",
+    "choice3": "Hemiparese",
+    "choice4": "Tetraplegie",
+    "answer": 3,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche Art von Lähmung tritt bei einer Schädigung des peripheren Nervensystems auf?",
+    "choice1": "Spastische Lähmung",
+    "choice2": "Schlaffe Lähmung",
+    "choice3": "Akinese",
+    "choice4": "Tremor",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welcher Reflex wird bei einer zentralen Lähmung pathologisch ausgelöst?",
+    "choice1": "Babinski-Reflex",
+    "choice2": "Patellarsehnenreflex",
+    "choice3": "Achillessehnenreflex",
+    "choice4": "Glabellareflex",
+    "answer": 1,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welches ist KEIN Kardinalsymptom des idiopathischen Parkinson-Syndroms?",
+    "choice1": "Akinese",
+    "choice2": "Tremor",
+    "choice3": "Lähmung",
+    "choice4": "Rigor",
+    "answer": 3,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche Form des Zitterns ist für Parkinson-Patienten typisch?",
+    "choice1": "Intentionstremor",
+    "choice2": "Ruhetremor",
+    "choice3": "Essenzieller Tremor",
+    "choice4": "Aktionstremor",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche Nebenwirkung tritt oft nach längerer Levodopa-Therapie auf?",
+    "choice1": "Tachykardie",
+    "choice2": "On-Off-Symptomatik",
+    "choice3": "Hypotonie",
+    "choice4": "Muskelkrämpfe",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche Muskeltonusstörung ist typisch für Morbus Parkinson?",
+    "choice1": "Spastik",
+    "choice2": "Rigor",
+    "choice3": "Hypotonie",
+    "choice4": "Hyperkinesie",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Wie äußert sich das Zahnradphänomen?",
+    "choice1": "Plötzlicher Muskelkollaps",
+    "choice2": "Rhythmisches Zittern während Ruhephasen",
+    "choice3": "Ruckartiges Nachgeben der Muskeln bei passiver Bewegung",
+    "choice4": "Zittern nur bei gezielter Bewegung",
+    "answer": 3,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Was ist ein typisches Symptom einer zerebellären Ataxie?",
+    "choice1": "Hypokinesie",
+    "choice2": "Steifigkeit der Muskulatur",
+    "choice3": "Unsicherer Gang, auch mit offenen Augen",
+    "choice4": "Muskelkrämpfe während der Nacht",
+    "answer": 3,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche Stufe der Bewusstseinsstörung beschreibt einen Zustand, in dem der Patient nur auf Schmerzreize reagiert?",
+    "choice1": "Somnolenz",
+    "choice2": "Sopor",
+    "choice3": "Koma",
+    "choice4": "Delir",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche Symptome treten bei einer Somnolenz auf?",
+    "choice1": "Unregelmäßiges Atmen und keine Reaktionen",
+    "choice2": "Tiefes Koma ohne Reflexe",
+    "choice3": "Erhöhte Reizschwelle und verlangsamte Reaktionen",
+    "choice4": "Anfälle und Fieber",
+    "answer": 3,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche Bewusstseinsstörung ist durch vollständige Reaktionslosigkeit und erloschene Reflexe gekennzeichnet?",
+    "choice1": "Somnolenz",
+    "choice2": "Koma",
+    "choice3": "Sopor",
+    "choice4": "Verwirrtheitszustand",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Wie wird eine zentrale Sprachstörung nach abgeschlossener Sprachentwicklung bezeichnet?",
+    "choice1": "Dysarthrie",
+    "choice2": "Aphasie",
+    "choice3": "Apraxie",
+    "choice4": "Alexie",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche Form der Aphasie führt zu stark beeinträchtigtem Sprachverständnis?",
+    "choice1": "Broca-Aphasie",
+    "choice2": "Wernicke-Aphasie",
+    "choice3": "Globale Aphasie",
+    "choice4": "Amnestische Aphasie",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Was ist ein typisches Merkmal einer ideomotorischen Apraxie?",
+    "choice1": "Der Patient erkennt Objekte nicht mehr visuell",
+    "choice2": "Der Patient kann keine Bewegungsabfolgen gezielt ausführen",
+    "choice3": "Der Patient spricht fließend, jedoch unverständlich",
+    "choice4": "Der Patient zeigt keine motorischen Auffälligkeiten",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Wie nennt man das vollständige Fehlen von Berührungsempfinden?",
+    "choice1": "Hyperästhesie",
+    "choice2": "Anästhesie",
+    "choice3": "Parästhesie",
+    "choice4": "Dysästhesie",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche Beschreibung trifft auf neuropathische Schmerzen zu?",
+    "choice1": "Muskelkrämpfe durch Bewegungsmangel",
+    "choice2": "Pulsierender Kopfschmerz",
+    "choice3": "Brennende, einschießende Schmerzen",
+    "choice4": "Schmerzen, die sich durch Bewegung verstärken",
+    "answer": 3,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche Art der Empfindung beschreibt die Tiefensensibilität?",
+    "choice1": "Vibrationsempfinden",
+    "choice2": "Schmerzempfinden",
+    "choice3": "Temperaturwahrnehmung",
+    "choice4": "Lage- und Bewegungsgefühl",
+    "answer": 4,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche Substanz wird bei Morbus Parkinson zu Dopamin umgewandelt?",
+    "choice1": "Levodopa",
+    "choice2": "Acetylcholin",
+    "choice3": "Amantadin",
+    "choice4": "GABA",
+    "answer": 1,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Was sind On-Off-Symptome bei Morbus Parkinson?",
+    "choice1": "Plötzlicher Wechsel von Schlaf und Wachheit",
+    "choice2": "Wechsel von guter Beweglichkeit und Akinese",
+    "choice3": "Starker Tremor beim Starten einer Bewegung",
+    "choice4": "Ein plötzliches Nachlassen der Reflexe",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welches der folgenden Symptome ist typisch für ein Freezing?",
+    "choice1": "Starkes Zittern der Beine im Stehen",
+    "choice2": "Plötzliches Erstarren in der Bewegung",
+    "choice3": "Erhöhte Muskelspannung bei Kälte",
+    "choice4": "Verwirrtheitszustände während des Gehens",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welches Leitsymptom kennzeichnet ALS?",
+    "choice1": "Nur spastische Lähmungen",
+    "choice2": "Nur schlaffe Lähmungen",
+    "choice3": "Kombination aus spastischen und schlaffen Lähmungen",
+    "choice4": "Nur Sensibilitätsstörungen",
+    "answer": 3,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Welche motorischen Symptome treten bei der bulbären Form von ALS auf?",
+    "choice1": "Vermehrtes Schwitzen und Herzrasen",
+    "choice2": "Lähmungen der Sprech- und Schluckmuskulatur",
+    "choice3": "Zittern der Hände",
+    "choice4": "Schmerzen in den Gliedmaßen",
+    "answer": 2,
+    "category": "Neurologie Teil 1"
+  },
+  {
+    "question": "Was ist eine häufige Todesursache bei ALS-Patienten?",
+    "choice1": "Herzinfarkt",
+    "choice2": "Nierenversagen",
+    "choice3": "Respiratorische Insuffizienz",
+    "choice4": "Schlaganfall",
+    "answer": 3,
+    "category": "Neurologie Teil 1"
+  }
+]

@@ -11,61 +11,56 @@ let questionCounter = 0;
 let availableQuestions = [];
 let wrongAnswers = 0; // Zählt die falschen Antworten
 
-
 // Fragen-Array
 let questions = [];
-let jsonFiles = ["chirugie.json", "neurologieTeil2.json", "Orthopädie.json", "neurologieTeil3.json", "questions.json"];
 
 // Konstanten
 const Correct_Bonus = 5;
-let Max_Questions = 20; // Standardmäßig auf 15 für Classic-Modus
+let Max_Questions = 20; // Standardmäßig auf 20 für den Querbeet-Modus
 
-// Spielmodus aus localStorage laden
+// Spielmodus und Kategorie aus localStorage laden
 let gameMode = localStorage.getItem('selectedGameMode');
+let selectedJsonFile = localStorage.getItem('selectedJsonFile');
+
+// Überprüfen, ob eine Kategorie und ein Spielmodus ausgewählt wurden
+if (!selectedJsonFile || !gameMode) {
+  alert("Bitte wähle zuerst eine Kategorie und dann einen Spielmodus.");
+  window.location.href = "Category.html"; // Zurück zur Kategoriewahl
+}
 
 // Spielmodi-Konfiguration basierend auf dem ausgewählten Modus
 switch (gameMode) {
   case "classic":
     Max_Questions = 15;
-    Max_Wrong_Answers = 5;// Classic-Modus mit maximal 15 Fragen
     break;
   case "challenger":
-    Max_Questions = 50;// Herausforderungsmodus mit 10 Fragen, als Beispiel
-    Max_Wrong_Answers = 3;
+    Max_Questions = 50; // Herausforderungsmodus
     break;
   case "endless":
-    Max_Questions = Infinity;// Endlosmodus: keine Begrenzung
-    Max_Wrong_Answers = Infinity;
+    Max_Questions = Infinity; // Endlosmodus: keine Begrenzung
     break;
   case "querbeet":
-    Max_Questions = 20; // Querbeet-Modus mit gemischten Kategorien, hier als Beispiel 20 Fragen
+    Max_Questions = 20; // Querbeet-Modus
     break;
   default:
     Max_Questions = 15; // Standardwert falls kein Modus gewählt wurde
 }
 
-// JSON-Dateien laden und das Spiel starten
 function loadQuestions() {
-  if (gameMode === "endless" || gameMode === "querbeet") {
-    // Für den Endless- oder Querbeet-Modus alle JSON-Dateien laden
-    Promise.all(jsonFiles.map(file => fetch(file).then(res => res.json())))
-        .then(loadedQuestionsArrays => {
-          // Alle Fragen aus den verschiedenen Dateien kombinieren
-          questions = loadedQuestionsArrays.flat();
-          startGame(); // Start des Spiels nach dem Laden der Fragen
-        })
-        .catch(error => console.error("Fehler beim Laden der JSON-Dateien:", error));
-  } else {
-    // Falls ein anderer Modus nur eine Datei benötigt, hier Anpassungen vornehmen
-    const jsonFile = localStorage.getItem('selectedJsonFile');
-    fetch(jsonFile)
-        .then(res => res.json())
-        .then(loadedQuestions => {
-          questions = loadedQuestions;
-          startGame();
-        })
-        .catch(error => console.error("Fehler beim Laden der JSON-Datei:", error));
-  }
+  // Lade die Fragen aus der ausgewählten JSON-Datei
+  fetch(selectedJsonFile)
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`Fehler beim Laden von ${selectedJsonFile}: ${res.statusText}`);
+        }
+        return res.json();
+      })
+      .then(loadedQuestions => {
+        questions = loadedQuestions;
+        console.log("Geladene Fragen:", questions); // Debugging-Log
+        startGame();
+      })
+      .catch(error => console.error("Fehler beim Laden der JSON-Datei:", error));
 }
 
 // Spiel starten

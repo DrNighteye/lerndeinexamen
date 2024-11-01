@@ -1,0 +1,399 @@
+[
+  {
+    "question": "Welche Krankheit führt häufig zur chronischen Herzinsuffizienz?",
+    "choice1": "Kardiomyopathie",
+    "choice2": "Diabetes",
+    "choice3": "Schlaganfall",
+    "choice4": "Hypercholesterinämie",
+    "answer": 1,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welche Behandlung wird bei akuter Herzinsuffizienz häufig als erste Maßnahme ergriffen?",
+    "choice1": "Langzeit-Sauerstofftherapie",
+    "choice2": "Diuretika und Sauerstoffgabe",
+    "choice3": "ACE-Hemmer-Therapie",
+    "choice4": "Betablocker",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welche Symptome sind bei einer Herzinsuffizienz typisch?",
+    "choice1": "Brustschmerzen und Schwäche",
+    "choice2": "Hohes Fieber und Gelenkschmerzen",
+    "choice3": "Atemnot und Ödeme",
+    "choice4": "Kopfschmerzen und Sehstörungen",
+    "answer": 3,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welches Medikament wird oft zur Behandlung von Hypertonie eingesetzt?",
+    "choice1": "Insulin",
+    "choice2": "ACE-Hemmer",
+    "choice3": "Ibuprofen",
+    "choice4": "Vitamin D",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Was beschreibt eine Linksherzinsuffizienz am besten?",
+    "choice1": "Überlastung der rechten Herzkammer",
+    "choice2": "Verminderte Auswurfleistung der linken Herzkammer",
+    "choice3": "Verminderte Blutgerinnung",
+    "choice4": "Verstopfung der Koronararterien",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Was ist eine häufige Ursache für Myokardinfarkte?",
+    "choice1": "Bluthochdruck",
+    "choice2": "Diabetes",
+    "choice3": "Verengte Koronararterien durch Plaque",
+    "choice4": "Nierenversagen",
+    "answer": 3,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welche Behandlungsmethode wird bei Vorhofflimmern empfohlen, wenn Medikamente nicht wirksam sind?",
+    "choice1": "Langzeit-Sauerstofftherapie",
+    "choice2": "Katheterablation",
+    "choice3": "Bypass-Operation",
+    "choice4": "Cholesterinsenkung",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welches Symptom weist häufig auf eine periphere arterielle Verschlusskrankheit (PAVK) hin?",
+    "choice1": "Schmerzen in den Beinen beim Gehen",
+    "choice2": "Häufige Kopfschmerzen",
+    "choice3": "Fieber und Schüttelfrost",
+    "choice4": "Schwellungen im Gesicht",
+    "answer": 1,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Was ist die Rolle von Diuretika bei Herzinsuffizienz?",
+    "choice1": "Reduktion des Blutzuckerspiegels",
+    "choice2": "Förderung der Flüssigkeitsausscheidung",
+    "choice3": "Senkung des Cholesterinspiegels",
+    "choice4": "Erhöhung der Blutproduktion",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Was beschreibt die koronare Herzkrankheit (KHK) am besten?",
+    "choice1": "Infektion der Herzklappen",
+    "choice2": "Verengung der Koronararterien",
+    "choice3": "Schwäche des Herzmuskels",
+    "choice4": "Bluthochdruck",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welche Blutgefäße sind hauptsächlich betroffen bei einer koronaren Herzkrankheit?",
+    "choice1": "Aorta",
+    "choice2": "Koronararterien",
+    "choice3": "Vena cava",
+    "choice4": "Kapillaren",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Was ist eine mögliche Komplikation bei langjährigem Vorhofflimmern?",
+    "choice1": "Bluthochdruck",
+    "choice2": "Lungenödem",
+    "choice3": "Thrombusbildung im Vorhof",
+    "choice4": "Infektionen der Herzklappen",
+    "answer": 3,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welcher Wert beschreibt den Druck im arteriellen System während der Herzkammersystole?",
+    "choice1": "Diastolischer Blutdruck",
+    "choice2": "Systolischer Blutdruck",
+    "choice3": "Zentraler Venendruck",
+    "choice4": "Pulmonaler Kapillardruck",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welche Substanz wird zur Prävention von Thrombosen nach Herzoperationen eingesetzt?",
+    "choice1": "Antibiotika",
+    "choice2": "Antikoagulantien",
+    "choice3": "Kalzium",
+    "choice4": "ACE-Hemmer",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Was ist das Hauptziel der Behandlung von Bluthochdruck?",
+    "choice1": "Verminderung des Risikos für kardiovaskuläre Komplikationen",
+    "choice2": "Erhöhung der Herzfrequenz",
+    "choice3": "Steigerung des Appetits",
+    "choice4": "Verbesserung der Nierenfunktion",
+    "answer": 1,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welche Art von Kardiomyopathie ist am häufigsten genetisch bedingt?",
+    "choice1": "Restriktive Kardiomyopathie",
+    "choice2": "Hypertrophe Kardiomyopathie",
+    "choice3": "Dilatative Kardiomyopathie",
+    "choice4": "Ischämische Kardiomyopathie",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welches der folgenden Symptome deutet am ehesten auf eine akute Koronarsyndrom hin?",
+    "choice1": "Kurzatmigkeit bei Anstrengung",
+    "choice2": "Brustschmerz, der länger als 15 Minuten andauert",
+    "choice3": "Häufiges Nasenbluten",
+    "choice4": "Starker Husten",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Was bezeichnet der Begriff 'Herzzeitvolumen'?",
+    "choice1": "Das Blutvolumen, das pro Schlag aus der linken Herzkammer gepumpt wird",
+    "choice2": "Das Blutvolumen, das in einer Minute durch das Herz gepumpt wird",
+    "choice3": "Das maximale Volumen der Herzvorhöfe",
+    "choice4": "Das Blutvolumen, das die Nieren in einer Minute filtern",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welcher Herzklappenfehler führt am ehesten zu einem Rückfluss des Blutes in den linken Vorhof?",
+    "choice1": "Aorteninsuffizienz",
+    "choice2": "Mitralinsuffizienz",
+    "choice3": "Pulmonalstenose",
+    "choice4": "Trikuspidalklappeninsuffizienz",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welche Funktion hat das Elektrolyt Kalium für das Herz?",
+    "choice1": "Förderung der Muskelentspannung",
+    "choice2": "Aufrechterhaltung der Herzrhythmusstabilität",
+    "choice3": "Verstärkung der Schlagkraft",
+    "choice4": "Unterstützung der Kollagenbildung",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Welche Erkrankung beschreibt eine dauerhafte Erweiterung des linken Ventrikels?",
+    "choice1": "Hypertrophe Kardiomyopathie",
+    "choice2": "Dilatative Kardiomyopathie",
+    "choice3": "Restriktive Kardiomyopathie",
+    "choice4": "Aortenstenose",
+    "answer": 2,
+    "category": "Kardiologie"
+  },
+  {
+    "question": "Was ist das Hauptziel bei der Behandlung von Patienten mit stabiler Angina pectoris?",
+    "choice1": "Schmerzlinderung",
+    "choice2": "Reduktion des Blutdrucks",
+    "choice3": "Verbesserung der Sauerstoffzufuhr zum Herzmuskel",
+    "choice4": "Erhöhung der Herzfrequenz",
+    "answer": 3,
+    "category": "Kardiologie"
+  },
+
+    {
+      "question": "Welche Struktur leitet den elektrischen Impuls vom Vorhof zur Herzkammer weiter?",
+      "choice1": "Sinusknoten",
+      "choice2": "AV-Knoten",
+      "choice3": "Purkinje-Fasern",
+      "choice4": "His-Bündel",
+      "answer": 2,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welches Medikament ist primär zur Senkung des Cholesterinspiegels bei kardiovaskulären Risikopatienten geeignet?",
+      "choice1": "Aspirin",
+      "choice2": "Statine",
+      "choice3": "Betablocker",
+      "choice4": "ACE-Hemmer",
+      "answer": 2,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Was ist ein charakteristisches Symptom für eine Aortenklappenstenose?",
+      "choice1": "Husten und Atemnot",
+      "choice2": "Angina pectoris und Synkope",
+      "choice3": "Muskelkrämpfe in den Beinen",
+      "choice4": "Geschwollene Knöchel",
+      "answer": 2,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Was ist ein typischer Auslöser für eine hypertensive Krise?",
+      "choice1": "Chronische Hypotonie",
+      "choice2": "Stress und Salzüberschuss",
+      "choice3": "Vitaminmangel",
+      "choice4": "Verminderte körperliche Aktivität",
+      "answer": 2,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welcher Herzklappenfehler ist durch einen Rückfluss von Blut in die rechte Herzkammer gekennzeichnet?",
+      "choice1": "Mitralinsuffizienz",
+      "choice2": "Aortenstenose",
+      "choice3": "Pulmonalinsuffizienz",
+      "choice4": "Trikuspidalklappeninsuffizienz",
+      "answer": 4,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welche Eigenschaft kennzeichnet die Hypertrophie des linken Ventrikels?",
+      "choice1": "Verdünnung der Herzmuskulatur",
+      "choice2": "Verdickung der Herzmuskulatur",
+      "choice3": "Erweiterung des linken Vorhofs",
+      "choice4": "Rückfluss in den rechten Ventrikel",
+      "answer": 2,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welche Herzrhythmusstörung ist gekennzeichnet durch unregelmäßige, schnelle Vorhofaktionen?",
+      "choice1": "Sinustachykardie",
+      "choice2": "Vorhofflimmern",
+      "choice3": "AV-Block",
+      "choice4": "Sinusbradykardie",
+      "answer": 2,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welches der folgenden Medikamente wird oft zur Herzfrequenzkontrolle bei Vorhofflimmern eingesetzt?",
+      "choice1": "Ibuprofen",
+      "choice2": "Metoprolol",
+      "choice3": "Paracetamol",
+      "choice4": "Hydrochlorothiazid",
+      "answer": 2,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Was ist eine typische Nebenwirkung von ACE-Hemmern?",
+      "choice1": "Haarausfall",
+      "choice2": "Trockener Husten",
+      "choice3": "Müdigkeit",
+      "choice4": "Ohrensausen",
+      "answer": 2,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welche Ursache liegt häufig einem Rechtsherzversagen zugrunde?",
+      "choice1": "Lungenerkrankungen wie COPD",
+      "choice2": "Hypercholesterinämie",
+      "choice3": "Typ-1-Diabetes",
+      "choice4": "Schlaganfall",
+      "answer": 1,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welcher Wert wird als idealer Zielwert für den LDL-Cholesterinspiegel bei Hochrisikopatienten angesehen?",
+      "choice1": "<100 mg/dl",
+      "choice2": "<70 mg/dl",
+      "choice3": "<50 mg/dl",
+      "choice4": "<150 mg/dl",
+      "answer": 2,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Was ist ein typisches Symptom eines akuten Lungenödems?",
+      "choice1": "Starker Husten mit schaumigem Auswurf",
+      "choice2": "Gelbfärbung der Haut",
+      "choice3": "Schwellungen der Extremitäten",
+      "choice4": "Herzklopfen und Fieber",
+      "answer": 1,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welche Aussage zur Dilatativen Kardiomyopathie ist korrekt?",
+      "choice1": "Sie ist häufig genetisch bedingt.",
+      "choice2": "Sie betrifft in erster Linie den rechten Ventrikel.",
+      "choice3": "Sie ist durch eine Vergrößerung der Herzkammern gekennzeichnet.",
+      "choice4": "Sie wird ausschließlich durch Viren verursacht.",
+      "answer": 3,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welche Rolle spielt die Natriumaufnahme bei der Behandlung von Bluthochdruck?",
+      "choice1": "Natrium erhöht die Aufnahme von Kalium.",
+      "choice2": "Eine erhöhte Natriumaufnahme senkt den Blutdruck.",
+      "choice3": "Eine reduzierte Natriumaufnahme hilft, den Blutdruck zu senken.",
+      "choice4": "Natriumaufnahme beeinflusst den Blutdruck nicht.",
+      "answer": 3,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welches Medikament wird oft zur Sekundärprävention nach einem Herzinfarkt verschrieben?",
+      "choice1": "Paracetamol",
+      "choice2": "Acetylsalicylsäure (ASS)",
+      "choice3": "Ibuprofen",
+      "choice4": "Vitamin D",
+      "answer": 2,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Was ist die Hauptfunktion des Myokards?",
+      "choice1": "Blut in die Lungen pumpen",
+      "choice2": "Sauerstoff speichern",
+      "choice3": "Blut durch Kontraktionen zu pumpen",
+      "choice4": "Elektrolyte speichern",
+      "answer": 3,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welche Struktur sorgt dafür, dass das Herz im Rhythmus schlägt?",
+      "choice1": "Aortenklappe",
+      "choice2": "Mitralklappe",
+      "choice3": "Sinusknoten",
+      "choice4": "Trikuspidalklappe",
+      "answer": 3,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welche Schicht des Herzens ist für die eigentliche Pumpfunktion verantwortlich?",
+      "choice1": "Endokard",
+      "choice2": "Perikard",
+      "choice3": "Myokard",
+      "choice4": "Epikard",
+      "answer": 3,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welche Untersuchungsmethode eignet sich am besten zur Darstellung von Herzstrukturen und -bewegungen?",
+      "choice1": "CT",
+      "choice2": "MRT",
+      "choice3": "Echokardiographie",
+      "choice4": "Ultraschall",
+      "answer": 3,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welche Phase des Herzzyklus beschreibt die Entspannung der Herzkammern?",
+      "choice1": "Systole",
+      "choice2": "Diastole",
+      "choice3": "Repolarisation",
+      "choice4": "Depolarisation",
+      "answer": 2,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Was ist ein häufiges Anzeichen für eine Perikarditis?",
+      "choice1": "Kopfschmerzen",
+      "choice2": "Rückenschmerzen",
+      "choice3": "Brustschmerzen, die sich beim Atmen verstärken",
+      "choice4": "Beinschmerzen",
+      "answer": 3,
+      "category": "Kardiologie"
+    },
+    {
+      "question": "Welche Form von Cholesterin gilt als 'schädlich' und sollte niedrig gehalten werden?",
+      "choice1": "HDL",
+      "choice2": "LDL",
+      "choice3": "Triglyceride",
+      "choice4": "Gesamtcholesterin",
+      "answer": 2,
+      "category": "Kardiologie"
+    }
+  ]

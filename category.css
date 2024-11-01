@@ -12,13 +12,14 @@ body {
 
 .category-container {
 
-  background: #1e393c;
+  background: #161a2d;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgb(0, 0, 0);
-  color: #0f1011;
+  color: #007a70;
   text-align: center;
   width: 300px; /* Breite der Box */
+
 }
 
 .category {
@@ -26,7 +27,7 @@ body {
   box-shadow: 0 0 10px rgb(0, 0, 0);
   margin: 10px 0;
   padding: 15px;
-  background: #ffffff;
+  background: #fdfdfd;
   border: black;
   backdrop-filter: blur(23px);
   border-radius: 5rem;
@@ -35,7 +36,7 @@ body {
 }
 
 .category:hover {
-  background: linear-gradient(to right, #585860, #2f4f4f); /* Hover-Effekt */
+  background: #bf6860 /* Hover-Effekt */
 }
 
 .btn {
@@ -60,3 +61,4 @@ body {
 .btn:hover {
   background-color: #1d393c; /* Hover-Effekt für Button */
 }
+.

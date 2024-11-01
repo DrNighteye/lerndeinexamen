@@ -1,13 +1,12 @@
-// Speichert die ausgewählte Kategorie im localStorage
 function selectCategory(category) {
   let jsonFile;
 
   switch (category) {
     case 'Neurologie Teil 1':
-      jsonFile = 'questions.json';
+      jsonFile = 'neurologieTeil1.json';
       break;
     case 'Neurologie Teil 2':
-      jsonFile = 'neurologieTeil2.json'; // Neue JSON-Datei für Neurologie Teil 2
+      jsonFile = 'neurologieTeil2.json';
       break;
     case 'Neurologie Teil 3':
       jsonFile = 'neurologieTeil3.json';
@@ -15,19 +14,33 @@ function selectCategory(category) {
     case 'Orthopädie':
       jsonFile = 'Orthopädie.json';
       break;
-    case 'Chirugie':
-      jsonFile = 'Chirugie.json';
+    case 'Chirurgie': // Korrigierte Schreibweise
+      jsonFile = 'Chirurgie.json';
       break;
-    case 'Neuropsychologische Syndrome':
-      jsonFile = 'neuropsychologie.json';
+    case 'Kardiologie':
+      jsonFile = 'Kardiologie.json'; // Hier ist der richtige Dateiname
       break;
     case 'Sensibilitätsstörungen':
       jsonFile = 'sensibilitaetsstoerungen.json';
       break;
+    case 'Geriatrie':
+      jsonFile = 'geriatrie.json';
+      break;
+    case 'Psychiatrie':
+      jsonFile = 'psychiatrie.json';
+      break;
+    case 'Pädiatrie':
+      jsonFile = 'paediatrie.json';
+      break;
+    case 'Weitere SKL Fächer':
+      jsonFile = 'weitereSklFaecher.json';
+      break;
     default:
-      console.error("Kategorie nicht gefunden");
+      console.error("Kategorie nicht gefunden:", category);
       return;
   }
+
+  console.log("Ausgewählte JSON-Datei für Kategorie:", category, "->", jsonFile);
 
   // Speichere die ausgewählte JSON-Datei im localStorage
   localStorage.setItem('selectedJsonFile', jsonFile);
