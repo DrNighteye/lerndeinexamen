@@ -15,7 +15,7 @@ function selectCategory(category) {
       jsonFile = 'Orthopädie.json';
       break;
     case 'Chirurgie': // Korrigierte Schreibweise
-      jsonFile = 'Chirurgie.json';
+      jsonFile = 'Chirugie.json';
       break;
     case 'Kardiologie':
       jsonFile = 'Kardiologie.json'; // Hier ist der richtige Dateiname
